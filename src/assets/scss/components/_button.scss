@@ -1,0 +1,49 @@
+table.button {
+  &.secondary {
+    border: none !important;
+    &:hover {
+      border: none !important;
+      table td {
+        background-color: transparent;
+        a {
+          border: 1px solid $lake;
+        }
+      }
+    }
+    table td {
+      background-color: transparent;
+      a {
+        color: $lake;
+        font-weight: 400;
+        border: 1px solid $lake;
+        border-radius: $global-radius;
+        background-color: $white;
+        &:hover {
+           background-color: $midnight-10 !important; // Button hover background
+        }
+      }
+    }
+  }
+  &.tiny {
+    table td {
+      padding: 0;
+      background-color: transparent;
+      a {
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 13px;
+        background-color: $primary-color;
+        padding: 4px 11px;
+      }
+    }
+  }
+}
+
+.set-right-justified{
+  text-align:right;
+  table{
+  	display:inline;
+    text-align:right;
+  }
+}

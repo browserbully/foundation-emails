@@ -16,25 +16,25 @@
 // 1. Global
 // ---------
 
-$primary-color: #2199e8;
-$secondary-color: #777777;
-$success-color: #3adb76;
-$warning-color: #ffae00;
-$alert-color: #ec5840;
-$light-gray: #f3f3f3;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$primary-color: #FFD00A;
+$secondary-color: #0078AB;
+$success-color: #6BA342;
+$warning-color: #DDAD49;
+$alert-color: #D62E4F;
+$light-gray: #E5EBED;
+$medium-gray: #99ADB6;
+$dark-gray: #003349;
+$black: #2C3439;
+$white: #FBFBFC;
 $pre-color: #ff6908;
-$global-width: 580px;
-$global-width-small: 95%;
-$global-gutter: 16px;
-$body-background: $light-gray;
+$global-width: 670px;
+$global-width-small: 100%;
+$global-gutter: 40px;
+$body-background: $white;
 $container-background: $white;
 $global-padding: 16px;
 $global-margin: 16px;
-$global-radius: 3px;
+$global-radius: 2px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
@@ -55,7 +55,7 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-$body-font-family: Helvetica, Arial, sans-serif;
+$body-font-family: "Nunito Sans", Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.3;
@@ -63,66 +63,67 @@ $global-font-size: 16px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
-$h1-font-size: 34px;
-$h2-font-size: 30px;
-$h3-font-size: 28px;
-$h4-font-size: 24px;
-$h5-font-size: 20px;
-$h6-font-size: 18px;
-$header-margin-bottom: 10px;
-$paragraph-margin-bottom: 10px;
-$small-font-size: 80%;
+$h1-font-size: 67px;
+$h2-font-size: 51px;
+$h3-font-size: 38px;
+$h4-font-size: 28px;
+$h5-font-size: 21px;
+$h6-font-size: 16px;
+$header-margin-bottom: 24px;
+$paragraph-margin-bottom: 24px;
+$small-font-size: 12px;
 $small-font-color: $medium-gray;
-$lead-font-size: $global-font-size * 1.25;
+$lead-font-size: 21px;
+// $lead-font-size: $global-font-size * 1.25;
 $lead-line-height: 1.6;
-$text-padding: 10px;
-$subheader-lineheight: 1.4;
+$text-padding: 8px;
+$subheader-lineheight: 1.2;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-font-weight;
-$subheader-margin-top: 4px;
-$subheader-margin-bottom: 8px;
+$subheader-margin-top: 8px;
+$subheader-margin-bottom: 16px;
 $hr-width: $global-width;
-$hr-border: 1px solid $black;
-$hr-margin: 20px auto;
-$anchor-text-decoration: none;
-$anchor-color: $primary-color;
-$anchor-color-visited: $anchor-color;
+$hr-border: 1px solid $light-gray;
+$hr-margin: 24px auto;
+$anchor-text-decoration: underline;
+$anchor-color: $secondary-color;
+$anchor-color-visited: $dark-gray;
 $anchor-color-hover: darken($primary-color, 10%);
 $anchor-color-active: $anchor-color-hover;
-$stat-font-size: 40px;
+$stat-font-size: 38px;
 
 // 5. Button
 // ---------
 
 $button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
+  tiny: 0px 8px 0px 8px,
+  small: 4px 16px 4px 16px,
+  default: 8px 20px 8px 20px,
+  large: 12px 24px 12px 24px,
 );
 $button-font-size: (
   tiny: 10px,
   small: 12px,
   default: 16px,
-  large: 20px,
+  large: 21px,
 );
-$button-color: $white;
-$button-color-alt: $medium-gray;
+$button-color: $black;
+$button-color-alt: $primary-color;
 $button-font-weight: bold;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $primary-color;
-$button-border: 2px solid $button-background;
+$button-border: none;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 
 // 6. Callout
 // ----------
 
-$callout-background: $white;
+$callout-background: $midnight;
 $callout-background-fade: 85%;
-$callout-padding: 10px;
+$callout-padding: 8px;
 $callout-margin-bottom: $global-margin;
-$callout-border: 1px solid darken($callout-background, 20%);
+$callout-border: none;
 $callout-border-secondary: 1px solid darken($secondary-color, 20%);
 $callout-border-success: 1px solid darken($success-color, 20%);
 $callout-border-warning: 1px solid darken($warning-color, 20%);
@@ -131,17 +132,16 @@ $callout-border-alert: 1px solid darken($alert-color, 20%);
 // 7. Menu
 // -------
 
-$menu-item-padding: 10px;
-$menu-item-gutter: 10px;
-$menu-item-color: $primary-color;
+$menu-item-padding: 16px;
+$menu-item-gutter: 8px;
+$menu-item-color: $secondary-color;
 
 // 8. Thumbnail
 // ------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: solid 1px $light-gray;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
-

@@ -1,11 +1,11 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  background: $white !important;
 }
 
 .container.header {
@@ -18,7 +18,7 @@ html,
 
 // Full Width Headers
 .header {
-  background: #8a8a8a;
+  background: $white;
 }
 
 .header .columns {
@@ -26,8 +26,8 @@ html,
 }
 
 .header p {
-  color: #fff;
-  padding-top: 15px;
+  color: $black;
+  padding-top: 16px;
 }
 
 .header .wrapper-inner {

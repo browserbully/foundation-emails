@@ -1,0 +1,32 @@
+.reminder {
+  p {
+    margin-bottom: 0;
+    &.highlight {
+      font-size: 10px;
+      color: $dark-gray;
+      font-weight: 600;
+    }
+  }
+  .trip {
+    height: 112px !important;
+    img {
+      position: absolute;
+      border-radius: 10px 0 0 10px;
+    }
+    h5 {
+      @include font-wigrum;
+      font-size: 21px;
+      line-height: 28px;
+      letter-spacing: -0.1px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    box-shadow: 0 0 30px 0 $light-gray;
+    border-radius: 10px;
+    background-color: $white;
+
+    .description {
+      padding-top: 16px;
+    }
+  }
+}

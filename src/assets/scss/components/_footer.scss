@@ -1,0 +1,12 @@
+.footer {
+  p {
+    &.small {
+      font-size: 10px;
+      color: $medium-gray;
+    }
+    &.links {
+      font-size: 12px;
+      color: $dark-gray;
+    }
+  }
+}

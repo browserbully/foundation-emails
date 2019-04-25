@@ -1,0 +1,25 @@
+.headline {
+  @include font-wigrum;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.5px;
+}
+
+.headline,
+.lead,
+.section-title {
+  color: $midnight;
+  hyphens: none;
+}
+
+p.lead {
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -.2px;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}

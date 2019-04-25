@@ -1,4 +1,20 @@
+// Vacasa globals
+@import 'colors';
+@import 'utilities';
+
+// Zurb default styles
 @import 'settings';
 @import 'foundation-emails';
 
 @import 'template/template';
+
+// Vacasa Component Overrides
+@import 'components/body';
+@import 'components/button';
+@import 'components/callout';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/headline';
+@import 'components/hero';
+@import 'components/listing';
+@import 'components/reminder';

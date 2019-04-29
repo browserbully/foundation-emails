@@ -25,18 +25,18 @@ subject: Need an excuse to get away this weekend?
     </columns>
   </row>
 
-  {{#if peat.percent_max}}
+  {{#if peat-data.percent_max}}
   <row>
     <columns>
-      <p class="lead">Booking at the last minute can save you <strong>up to {{peat.percent_max}}&#37;</strong> on a beautiful vacation home. Browse our best prices for upcoming dates.</p>
+      <p class="lead">Booking at the last minute can save you up to {{peat-data.percent_max}}&#37; on a beautiful vacation home. Browse our best prices for upcoming dates.</p>
     </columns>
   </row>
   {{/if}}
 
   <spacer size="40"></spacer>
 
-  {{#if peat.city}}
-  {{#each peat.city}}
+  {{#if peat-data.city}}
+  {{#each peat-data.city}}
 
   <row>
     <columns>
@@ -63,11 +63,9 @@ subject: Need an excuse to get away this weekend?
       </columns>
     </row>
     <row>
-      <columns small="12" large="8">
-        <h2 class="section-title">{{#if this.unit_featured.[0].name}}{{this.unit_featured.[0].name}}, {{/if}}{{#if this.state}}{{this.state}}{{/if}}</h2>
-      </columns>
-      <columns large="4" class="show-for-large">
-        &nbsp;
+      <columns>
+        <h2 class="section-title">{{#if this.unit_featured.[0].name}}{{this.unit_featured.[0].name}}<br>{{/if}}
+          {{#if this.name}}{{this.name}}, {{/if}}{{#if this.state}}{{this.state}}{{/if}}</h2>
       </columns>
     </row>
     <row>
@@ -91,9 +89,12 @@ subject: Need an excuse to get away this weekend?
 
  {{/if}}
 
-  <row class="listings">
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200" alt="Lakeside view of boat dock from house deck.">
+ {{#if this.unit_listing}}
+ {{#each this.unit_listing}}
+  <row class="listing">
+
+    <columns>
+      <img class="small-float-center" src="https://vacasa-units.imgix.net/{{this.id}}.jpg?w=590&h=240&fit=crop" alt="Lakeside view of boat dock from house deck.">
       <row>
         <columns large="8">
           <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
@@ -102,65 +103,27 @@ subject: Need an excuse to get away this weekend?
           <button href="#" class="tiny rounded">Save 23&#37;</button>
         </columns>
       </row>
-      <h4>Lake Fork Lodge - {{peat.city.[0]}}, Idaho</h4>
+      <h4>{{this.name}}</h4>
       <p>From $190</p>
       <button href="#" class="large secondary radius">Book Now</button>
     </columns>
 
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&fit=crop" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny rounded">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary radius">Book Now</button>
-    </columns>
   </row>
+  {{/each}}
 
-  <row class="listings">
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&fit=crop" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny rounded">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary radius">Book Now</button>
-    </columns>
-
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&fit=crop" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny rounded">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary radius">View All Homes</button>
+  <row>
+    <columns large="12">
+      <button href="#" class="large primary radius expanded">All McCall Homes</button>
     </columns>
   </row>
 
   <spacer size="40"></spacer>
+  {{/if}}
 
   {{/each}}
   {{/if}}
 
-  <row class="reminder">
+  <!-- <row class="reminder">
     <columns>
       <row>
         <columns large="12">
@@ -178,7 +141,7 @@ subject: Need an excuse to get away this weekend?
         </columns>
       </row>
     </columns>
-  </row>
+  </row> -->
 
   <spacer size="72"></spacer>
 

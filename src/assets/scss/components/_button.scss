@@ -1,25 +1,39 @@
 table.button {
+//   border-collapse: separate;
+//   tr:first-child td:first-child { border-top-left-radius: $global-radius; }
+//   tr:first-child td:last-child { border-top-right-radius: $global-radius; }
+//   tr:last-child td:first-child { border-bottom-left-radius: $global-radius; }
+//   tr:last-child td:last-child { border-bottom-right-radius: $global-radius; }
   &.secondary {
-    border: none !important;
-    &:hover {
-      border: none !important;
-      table td {
-        background-color: transparent;
-        a {
-          border: 1px solid $lake;
-        }
-      }
-    }
-    table td {
-      background-color: transparent;
-      a {
-        color: $lake;
-        font-weight: 400;
-        border: 1px solid $lake;
-        border-radius: $global-radius;
+//     border: none !important;
+//     &:hover {
+//       table td {
+//         background-color: $white !important;
+//         border: 1px solid $lake;
+//         a {
+//           // border: 1px solid $lake;
+//           // border-radius: $global-radius;
+//         }
+//       }
+//     }
+    table {
+//       border-collapse: separate;
+//       tr:first-child td:first-child { border-top-left-radius: $global-radius; }
+//       tr:first-child td:last-child { border-top-right-radius: $global-radius; }
+//       tr:last-child td:first-child { border-bottom-left-radius: $global-radius; }
+//       tr:last-child td:last-child { border-bottom-right-radius: $global-radius; }
+      td {
         background-color: $white;
-        &:hover {
-           background-color: $midnight-10 !important; // Button hover background
+//         border-radius: $global-radius;
+        border: 1px solid $lake;
+        a {
+          color: $lake;
+          font-weight: 400;
+          font-size: 16px !important;
+//           background-color: $white;
+//           &:hover {
+//              background-color: $midnight-10 !important; // Button hover background
+//           }
         }
       }
     }
@@ -27,19 +41,19 @@ table.button {
   &.tiny {
     table td {
       padding: 0;
-      background-color: transparent;
+//       background-color: transparent;
       a {
         font-weight: 700;
         text-transform: uppercase;
-        border: none;
-        border-radius: 13px;
-        background-color: $primary-color;
+//         border: none;
+//         border-radius: 13px;
+//         background-color: $primary-color;
         padding: 4px 11px;
       }
     }
   }
 }
-
+//
 .set-right-justified{
   text-align:right;
   table{

@@ -16,16 +16,16 @@
 // 1. Global
 // ---------
 
-$primary-color: #FFD00A;
-$secondary-color: #0078AB;
-$success-color: #6BA342;
-$warning-color: #DDAD49;
-$alert-color: #D62E4F;
-$light-gray: #E5EBED;
-$medium-gray: #99ADB6;
-$dark-gray: #003349;
-$black: #2C3439;
-$white: #FBFBFC;
+$primary-color: $owner-yellow;
+$secondary-color: $lake;
+$success-color: $success;
+$warning-color: $awareness;
+$alert-color: $alertness;
+$light-gray: $dusk-lightest;
+$medium-gray: $dusk-lighter;
+$dark-gray: $dusk-light;
+$black: $black;
+$white: $white;
 $pre-color: #ff6908;
 $global-width: 670px;
 $global-width-small: 100%;

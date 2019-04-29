@@ -1,5 +1,5 @@
 ---
-subject: Your wallet deserves a vacation, too.
+subject: Need an excuse to get away this weekend?
 ---
 
 <wrapper class="header">
@@ -25,24 +25,30 @@ subject: Your wallet deserves a vacation, too.
     </columns>
   </row>
 
+  {{#if peat.percent_max}}
   <row>
     <columns>
-      <p class="lead">Booking at the last minute can save you <strong>up to 25&#37;</strong> on a beautiful vacation home. Browse our best prices for upcoming dates.</p>
+      <p class="lead">Booking at the last minute can save you <strong>up to {{peat.percent_max}}&#37;</strong> on a beautiful vacation home. Browse our best prices for upcoming dates.</p>
     </columns>
   </row>
+  {{/if}}
 
   <spacer size="40"></spacer>
 
+  {{#if peat.city}}
+  {{#each peat.city}}
+
   <row>
     <columns>
-      <h2 class="section-title">McCall, ID</h2>
+      <h2 class="section-title">{{#if this.name}}{{this.name}}{{/if}}, {{#if this.state_abbreviated}}{{this.state_abbreviated}}{{/if}}</h2>
     </columns>
   </row>
 
+  {{#if this.unit_featured}}
   <row class="collapse">
     <columns class="hero">
       <center>
-        <img src="https://vacasa-units.imgix.net/1444815.jpg?w=670&h=298&fit=crop">
+        <img src="https://vacasa-units.imgix.net/{{this.unit_featured.[0].id}}.jpg?w=670&h=298&fit=crop">
       </center>
     </columns>
   </row>
@@ -50,15 +56,15 @@ subject: Your wallet deserves a vacation, too.
   <callout>
     <row>
       <columns large="6">
-        <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
+        <p class="highlight uppercase">{{#if this.unit_featured.[0].bed}}{{this.unit_featured.[0].bed}} Bed | {{/if}}{{#if this.unit_featured.[0].bath}}{{this.unit_featured.[0].bath}} Bath | {{/if}}{{#if this.unit_featured.[0].sleeps}}Sleeps {{this.unit_featured.[0].sleeps}}{{/if}}</p>
       </columns>
       <columns large="6" class="set-right-justified">
-        <button href="#" class="tiny">Save 23&#37;</button>
+        <button href="#" class="tiny rounded">Save {{this.unit_featured.[0].percent}}&#37;</button>
       </columns>
     </row>
     <row>
       <columns small="12" large="8">
-        <h2 class="section-title">Lodge Condo  McCall, Idaho</h2>
+        <h2 class="section-title">{{#if this.unit_featured.[0].name}}{{this.unit_featured.[0].name}}, {{/if}}{{#if this.state}}{{this.state}}{{/if}}</h2>
       </columns>
       <columns large="4" class="show-for-large">
         &nbsp;
@@ -66,20 +72,24 @@ subject: Your wallet deserves a vacation, too.
     </row>
     <row>
       <columns class="body-copy">
-        <p>Featured: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p>Featured: {{this.unit_featured.[0].description}}</p>
       </columns>
     </row>
     <row>
       <columns>
-        <p class="highlight">From $220</p>
+        <p class="highlight">From ${{this.unit_featured.[0].price}}</p>
       </columns>
     </row>
     <row>
       <columns>
-        <button href="#" class="large secondary">Book this Weekend</button>
+        <button href="#" class="large secondary radius">Book this Weekend</button>
       </columns>
     </row>
   </callout>
+
+  <spacer size="24"></spacer>
+
+ {{/if}}
 
   <row class="listings">
     <columns large="6">
@@ -89,194 +99,77 @@ subject: Your wallet deserves a vacation, too.
           <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
         </columns>
         <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
+          <button href="#" class="tiny rounded">Save 23&#37;</button>
         </columns>
       </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
+      <h4>Lake Fork Lodge - {{peat.city.[0]}}, Idaho</h4>
       <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
+      <button href="#" class="large secondary radius">Book Now</button>
     </columns>
 
     <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
+      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&fit=crop" alt="Lakeside view of boat dock from house deck.">
       <row>
         <columns large="8">
           <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
         </columns>
         <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
+          <button href="#" class="tiny rounded">Save 23&#37;</button>
         </columns>
       </row>
       <h4>Lake Fork Lodge - McCall, Idaho</h4>
       <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
+      <button href="#" class="large secondary radius">Book Now</button>
     </columns>
   </row>
 
   <row class="listings">
     <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
+      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&fit=crop" alt="Lakeside view of boat dock from house deck.">
       <row>
         <columns large="8">
           <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
         </columns>
         <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
+          <button href="#" class="tiny rounded">Save 23&#37;</button>
         </columns>
       </row>
       <h4>Lake Fork Lodge - McCall, Idaho</h4>
       <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
+      <button href="#" class="large secondary radius">Book Now</button>
     </columns>
 
     <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
+      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&fit=crop" alt="Lakeside view of boat dock from house deck.">
       <row>
         <columns large="8">
           <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
         </columns>
         <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
+          <button href="#" class="tiny rounded">Save 23&#37;</button>
         </columns>
       </row>
       <h4>Lake Fork Lodge - McCall, Idaho</h4>
       <p>From $190</p>
-      <button href="#" class="large secondary">View All Homes</button>
+      <button href="#" class="large secondary radius">View All Homes</button>
     </columns>
   </row>
 
   <spacer size="40"></spacer>
 
-  <row>
-    <columns>
-      <h2 class="section-title">McCall, ID.</h2>
-    </columns>
-  </row>
-
-  <row class="collapse">
-    <columns class="hero">
-      <center>
-        <img src="https://vacasa-units.imgix.net/1444815.jpg?w=670&h298&crop=fit">
-      </center>
-    </columns>
-  </row>
-
-  <callout>
-    <row>
-      <columns large="6">
-        <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-      </columns>
-      <columns large="6" class="set-right-justified">
-        <button href="#" class="tiny">Save 23&#37;</button>
-      </columns>
-    </row>
-    <row>
-      <columns small="12" large="8">
-        <h2 class="section-title">Lodge Condo  McCall, Idaho</h2>
-      </columns>
-      <columns large="4" class="show-for-large">
-        &nbsp;
-      </columns>
-    </row>
-    <row>
-      <columns class="body-copy">
-        <p>Featured: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      </columns>
-    </row>
-    <row>
-      <columns>
-        <p class="highlight">From $220</p>
-      </columns>
-    </row>
-    <row>
-      <columns>
-        <button href="#" class="large secondary">Book Now</button>
-      </columns>
-    </row>
-  </callout>
-
-  <row class="listings">
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
-    </columns>
-
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
-    </columns>
-  </row>
-
-  <row class="listings">
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
-    </columns>
-
-    <columns large="6">
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/1444815.jpg?w=270&h200&crop=fit" alt="Lakeside view of boat dock from house deck.">
-      <row>
-        <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
-        </columns>
-        <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny">Save 23&#37;</button>
-        </columns>
-      </row>
-      <h4>Lake Fork Lodge - McCall, Idaho</h4>
-      <p>From $190</p>
-      <button href="#" class="large secondary">Book Now</button>
-    </columns>
-  </row>
-
-  <row>
-    <columns large="12">
-      <button href="#" class="large expanded primary">View All Homes</button>
-    </columns>
-  </row>
-
-  <spacer size="40"></spacer>
+  {{/each}}
+  {{/if}}
 
   <row class="reminder">
     <columns>
       <row>
         <columns large="12">
-          <p>Thanks for choosing Vacasa for your 2016 visit to Bend, OR. We’re happy to host you anytime!</p>
+          <p>Thanks for choosing Vacasa for your 2016 visit to Bend, OR. We're happy to host you anytime!</p>
         </columns>
       </row>
       <row class="trip">
         <columns large="3">
-          <img src="http://placehold.it/112x112" alt="Lakeside view of boat dock from house deck.">
+          <img src="https://vacasa-units.imgix.net/1444815.jpg?w=112&h=112&fit=crop" alt="Lakeside view of boat dock from house deck.">
         </columns>
         <columns large="9" class="description">
           <p class="highlight uppercase">July 2016</p>
@@ -294,7 +187,7 @@ subject: Your wallet deserves a vacation, too.
       <p class="small">&copy; Vacasa, LLC</p>
     </columns>
     <columns large="6">
-      <p class="links text-right"><a href="#">Unsubscribe.</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Privacy & Terms</a></p>
+      <p class="links text-right"><a href="#">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Privacy &amp; Terms</a></p>
     </columns>
   </row>
 

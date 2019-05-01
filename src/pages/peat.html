@@ -25,30 +25,32 @@ subject: Need an excuse to get away this weekend?
     </columns>
   </row>
 
-  {{#if peat-data.percent_max}}
+  \{{#if peat-data.percent_max}}
   <row>
     <columns>
-      <p class="lead">Booking at the last minute can save you up to {{peat-data.percent_max}}&#37; on a beautiful vacation home. Browse our best prices for upcoming dates.</p>
+      <p class="lead">Booking at the last minute can save you up to \{{peat-data.percent_max}}&#37; on a beautiful vacation home. Browse our best prices for upcoming dates.</p>
     </columns>
   </row>
-  {{/if}}
+  \{{/if}}
 
   <spacer size="40"></spacer>
 
-  {{#if peat-data.city}}
-  {{#each peat-data.city}}
+  \{{#if peat-data.city}}
+  \{{#each peat-data.city}}
 
   <row>
     <columns>
-      <h2 class="section-title">{{#if this.name}}{{this.name}}{{/if}}, {{#if this.state_abbreviated}}{{this.state_abbreviated}}{{/if}}</h2>
+      <h2 class="section-title">\{{#if this.name}}\{{this.name}}\{{/if}}, \{{#if this.state_abbreviated}}\{{this.state_abbreviated}}\{{/if}}</h2>
     </columns>
   </row>
 
-  {{#if this.unit_featured}}
+  \{{#if this.unit_featured}}
+  \{{#each this.unit_featured}}
+  
   <row class="collapse">
     <columns class="hero">
       <center>
-        <img src="https://vacasa-units.imgix.net/{{this.unit_featured.[0].id}}.jpg?w=670&h=298&fit=crop">
+        <img src="https://vacasa-units.imgix.net/\{{this.id}}.jpg?w=670&h=298&fit=crop" alt="">
       </center>
     </columns>
   </row>
@@ -56,101 +58,95 @@ subject: Need an excuse to get away this weekend?
   <callout>
     <row>
       <columns large="6">
-        <p class="highlight uppercase">{{#if this.unit_featured.[0].bed}}{{this.unit_featured.[0].bed}} Bed | {{/if}}{{#if this.unit_featured.[0].bath}}{{this.unit_featured.[0].bath}} Bath | {{/if}}{{#if this.unit_featured.[0].sleeps}}Sleeps {{this.unit_featured.[0].sleeps}}{{/if}}</p>
+        <p class="highlight uppercase">\{{#if this.bed}}\{{this.bed}} Bed | \{{/if}}\{{#if this.bath}}\{{this.bath}} Bath | \{{/if}}\{{#if this.sleeps}}Sleeps \{{this.sleeps}}\{{/if}}</p>
       </columns>
       <columns large="6" class="set-right-justified">
-        <button href="#" class="tiny rounded">Save {{this.unit_featured.[0].percent}}&#37;</button>
+        <button href="#" class="tiny rounded">Save \{{this.percent}}&#37;</button>
       </columns>
     </row>
     <row>
       <columns>
-        <h2 class="section-title">{{#if this.unit_featured.[0].name}}{{this.unit_featured.[0].name}}<br>{{/if}}
-          {{#if this.name}}{{this.name}}, {{/if}}{{#if this.state}}{{this.state}}{{/if}}</h2>
+        <h2 class="section-title">\{{#if this.name}}\{{this.name}}<br>\{{/if}}
+          \{{../name}}\{{#if ../state}}, \{{../state}}\{{/if}}</h2>
       </columns>
     </row>
     <row>
       <columns class="body-copy">
-        <p>Featured: {{this.unit_featured.[0].description}}</p>
+        <p>\{{this.description}}</p>
       </columns>
     </row>
     <row>
       <columns>
-        <p class="highlight">From ${{this.unit_featured.[0].price}}</p>
+        <p class="highlight">From &#36;\{{this.price}}</p>
       </columns>
     </row>
     <row>
       <columns>
-        <button href="#" class="large secondary radius">Book this Weekend</button>
+        <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="large secondary radius">Book this Weekend</button>
       </columns>
     </row>
   </callout>
 
   <spacer size="24"></spacer>
+  \{{/each}}
+  \{{/if}}
 
- {{/if}}
-
- {{#if this.unit_listing}}
- {{#each this.unit_listing}}
+ \{{#if this.unit_listing}}
+ \{{#each this.unit_listing}}
   <row class="listing">
 
     <columns>
-      <img class="small-float-center" src="https://vacasa-units.imgix.net/{{this.id}}.jpg?w=590&h=240&fit=crop" alt="Lakeside view of boat dock from house deck.">
+      <img class="small-float-center" src="https://vacasa-units.imgix.net/\{{this.id}}.jpg?w=590&h=240&fit=crop" alt="">
       <row>
         <columns large="8">
-          <p class="highlight uppercase">2 Bed | 2 Bath | Sleeps 10</p>
+          <p class="highlight uppercase">\{{#if this.bed}}\{{this.bed}} Bed | \{{/if}}\{{#if this.bath}}\{{this.bath}} Bath | \{{/if}}\{{#if this.sleeps}}Sleeps \{{this.sleeps}}\{{/if}}</p>
         </columns>
+        \{{#if this.percent}}
         <columns large="4" class="set-right-justified">
-          <button href="#" class="tiny rounded">Save 23&#37;</button>
+          <button href="#" class="tiny rounded">Save \{{this.percent}}&#37;</button>
         </columns>
+        \{{/if}}
       </row>
-      <h4>{{this.name}}</h4>
-      <p>From $190</p>
+      \{{#if this.name}}<h4>\{{this.name}}<br>
+      \{{../name}}, \{{../state}}</h4>\{{/if}}
+      \{{#if this.price}}<p>From &#36;\{{this.price}}</p>\{{/if}}
       <button href="#" class="large secondary radius">Book Now</button>
     </columns>
 
   </row>
-  {{/each}}
+  \{{/each}}
 
   <row>
-    <columns large="12">
-      <button href="#" class="large primary radius expanded">All McCall Homes</button>
+    <columns small="12">
+      <button href="https://www.vacasa.com/usa/\{{state}}/\{{name}}/" class="large primary radius expanded">All \{{this.name}} Homes</button>
     </columns>
   </row>
 
   <spacer size="40"></spacer>
-  {{/if}}
+  \{{/if}}
 
-  {{/each}}
-  {{/if}}
-
-  <!-- <row class="reminder">
-    <columns>
-      <row>
-        <columns large="12">
-          <p>Thanks for choosing Vacasa for your 2016 visit to Bend, OR. We're happy to host you anytime!</p>
-        </columns>
-      </row>
-      <row class="trip">
-        <columns large="3">
-          <img src="https://vacasa-units.imgix.net/1444815.jpg?w=112&h=112&fit=crop" alt="Lakeside view of boat dock from house deck.">
-        </columns>
-        <columns large="9" class="description">
-          <p class="highlight uppercase">July 2016</p>
-          <h5>Bend, Oregon</h5>
-          <p><a href="#">Book Now</a></p>
-        </columns>
-      </row>
-    </columns>
-  </row> -->
-
-  <spacer size="72"></spacer>
+  \{{/each}}
+  \{{/if}}
 
   <row class="footer">
-    <columns large="6">
-      <p class="small">&copy; Vacasa, LLC</p>
-    </columns>
-    <columns large="6">
-      <p class="links text-right"><a href="#">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Privacy &amp; Terms</a></p>
+    <columns>
+      <row>
+        <columns small="2">
+          <img src="http://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.svg" width="92px" alt="Vacasa">
+        </columns>
+        <columns small="10" class="story">
+          <h4>For the love of vacation homes.</h4>
+          <p>It’s why we’re here. We bring families and friends together in thousands of vacation homes around the world.</p>
+        </columns>
+      </row>
+      <row>
+        <columns small="4">
+          <p class="small">&copy; Vacasa, LLC</p>
+        </columns>
+        <columns small="8">
+          <p class="links text-right"><a href="#">Unsubscribe</a>&nbsp;&nbsp;<span class="separator">|</span>&nbsp;&nbsp;<a href="#">Privacy &amp; Terms</a></p>
+        </columns>
+      </row>
     </columns>
   </row>
 

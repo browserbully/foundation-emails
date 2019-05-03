@@ -3,4 +3,7 @@ body,
 html,
 .body {
   background: $white !important;
+  a.text-link {
+    color: $midnight-10 !important;
+  }
 }

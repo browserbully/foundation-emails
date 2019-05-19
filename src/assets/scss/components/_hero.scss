@@ -1,7 +1,31 @@
-h2.section-title {
-  margin-bottom: 8px;
+.callout {
+  th.hero {
+    padding-bottom: 0;
+  }
+  small {
+    color: $midnight-40;
+    text-transform:uppercase;
+    font-size: 10px;
+  }
+  .button {
+    margin-bottom: 32px !important;
+  }
 }
 
-th.hero {
-  padding-bottom: 0;
+
+h2.section-title {
+margin-bottom: 8px;
+  a {
+    color: $white;
+    text-decoration: none;
+    @include font-wigrum;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.2px;
+    font-size: 40px;
+  }
+}
+
+th.columns.first {
+  padding-bottom: 0 !important;
 }

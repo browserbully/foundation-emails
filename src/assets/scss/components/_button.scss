@@ -28,7 +28,7 @@ table.button {
 //         border-radius: $global-radius;
         border: 1px solid $lake;
         a {
-          color: $lake;
+          color: $lake !important;
           font-weight: 400;
           font-size: 16px !important;
 //           background-color: $white;

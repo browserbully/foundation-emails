@@ -1,0 +1,157 @@
+---
+subject: Need an excuse to get away this weekend?
+---
+
+<wrapper class="header dark">
+  <container>
+    <row class="collapse">
+      <columns large="12" small="6">
+        <img height="32" width="164" src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-horizontal-light.png" alt="Vacasa">
+      </columns>
+    </row>
+    <row>
+      <h1 class="headline">Your vacation is our full-time job</h1>
+      Searchbar
+    </row>
+  </container>
+</wrapper>
+
+<container>
+
+  <spacer size="48"></spacer>
+
+  <row>
+    <columns>
+
+    </columns>
+  </row>
+
+  {{#if peat-data.percent_max}}
+  <row>
+    <columns small="12" large="11">
+      <p class="lead">Booking at the last minute saves you an average of {{peat-data.percent_max}}&#37;. Browse our best deals for this upcoming weekend.</p>
+    </columns>
+    <columns large="1" class="show-for-large">
+      &nbsp;
+    </columns>
+  </row>
+  {{/if}}
+
+  <spacer size="24"></spacer>
+
+  {{#if peat-data.city}}
+  {{#each peat-data.city}}
+
+  <row>
+    <columns>
+      <h2 class="section-title">{{#if this.name}}{{this.name}}{{/if}}, {{#if this.state_abbreviated}}{{this.state_abbreviated}}{{/if}}</h2>
+    </columns>
+  </row>
+
+  {{#if this.unit_featured}}
+  {{#each this.unit_featured}}
+
+  <row class="collapse">
+    <columns class="hero">
+      <center>
+        <a href="https://www.vacasa.com/unit.php?UnitID={{this.id}}"><img src="{{this.url}}?q=45&w=670&h=298&fit=crop" alt=""></a>
+      </center>
+    </columns>
+  </row>
+
+  <callout>
+    <row>
+      <columns large="6">
+        <p class="highlight uppercase">{{#if this.bed}}{{this.bed}} Bed | {{/if}}{{#if this.bath}}{{this.bath}} Bath | {{/if}}{{#if this.sleeps}}Sleeps {{this.sleeps}}{{/if}}</p>
+      </columns>
+      <columns large="6" class="set-right-justified">
+        <button href="https://www.vacasa.com/unit.php?UnitID={{this.id}}" class="tiny rounded">Save {{this.percent}}&#37;</button>
+      </columns>
+    </row>
+    <row>
+      <columns>
+        <h2 class="section-title"><a href="https://www.vacasa.com/unit.php?UnitID={{this.id}}">{{#if this.name}}{{this.name}}<br>{{/if}}
+          {{../name}}{{#if ../state}}, {{../state}}{{/if}}</a></h2>
+      </columns>
+    </row>
+    <row>
+      <columns class="body-copy">
+        <p>{{this.description}}<br><a class="text-link" href="https://www.vacasa.com/unit.php?UnitID={{this.id}}">Read More</a></p>
+      </columns>
+    </row>
+    <row>
+      <columns>
+        <p class="highlight">&#36;{{this.price}} <small>avg/night</small></p>
+      </columns>
+    </row>
+    <row>
+      <columns>
+        <button href="https://www.vacasa.com/unit.php?UnitID={{this.id}}" class="large secondary radius">Book this Weekend</button>
+      </columns>
+    </row>
+  </callout>
+
+  <spacer size="24"></spacer>
+  {{/each}}
+  {{/if}}
+
+ {{#if this.unit_listing}}
+ {{#each this.unit_listing}}
+  <row class="listing">
+
+    <columns>
+      <a href="https://www.vacasa.com/unit.php?UnitID={{this.id}}"><img class="small-float-center" src="{{this.url}}?q=45&w=670&h=298&fit=crop" alt=""></a>
+      <row>
+        <columns large="8">
+          <p class="highlight uppercase">{{#if this.bed}}{{this.bed}} Bed | {{/if}}{{#if this.bath}}{{this.bath}} Bath | {{/if}}{{#if this.sleeps}}Sleeps {{this.sleeps}}{{/if}}</p>
+        </columns>
+        {{#if this.percent}}
+        <columns large="4" class="set-right-justified">
+          <button href="https://www.vacasa.com/unit.php?UnitID={{this.id}}" class="tiny rounded">Save {{this.percent}}&#37;</button>
+        </columns>
+        {{/if}}
+      </row>
+      {{#if this.name}}<h4><a href="https://www.vacasa.com/unit.php?UnitID={{this.id}}">{{this.name}} -
+      {{../name}}, {{../state}}</a></h4>{{/if}}
+      {{#if this.price}}<p>&#36;{{this.price}} <small>avg/night</small></p>{{/if}}
+      <button href="https://www.vacasa.com/unit.php?UnitID={{this.id}}" class="large secondary radius">Book Now</button>
+    </columns>
+
+  </row>
+  {{/each}}
+
+  <row>
+    <columns small="12">
+      <button href="https://www.vacasa.com/usa/{{state}}/{{name}}/" class="large primary radius expanded">All {{this.name}} Homes</button>
+    </columns>
+  </row>
+
+  <spacer size="40"></spacer>
+  {{/if}}
+
+  {{/each}}
+  {{/if}}
+
+  <row class="footer">
+    <columns>
+      <row>
+        <columns small="2">
+          <img src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
+        </columns>
+        <columns small="10" class="story">
+          <h4>For the love of vacation homes.</h4>
+          <p>It’s why we’re here. We bring families and friends together in thousands of vacation homes around the world.</p>
+        </columns>
+      </row>
+      <row>
+        <columns small="12" large="8">
+          <p class="small">&copy; Vacasa, LLC. 850 NW 13th Portland, Oregon. Our discounts are based on an analysis of current and future prices.</p>
+        </columns>
+        <columns small="12" large="4">
+          <p class="links text-right"><a href="<%asm_group_unsubscribe_raw_url%>">Unsubscribe</a>&nbsp;&nbsp;<span class="separator">|</span>&nbsp;&nbsp;<a href="https://www.vacasa.com/terms-of-service">Privacy &amp; Terms</a></p>
+        </columns>
+      </row>
+    </columns>
+  </row>
+
+</container>

@@ -3,4 +3,11 @@
   img {
     margin-left: 40px;
   }
+  &.dark {
+    background-color: $midnight;
+    color: $white;
+    h1.headline {
+      color: white !important;
+    }
+  }
 }

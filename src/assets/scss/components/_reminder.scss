@@ -14,7 +14,7 @@
       border-radius: 10px 0 0 10px;
     }
     h5 {
-      @include font-wigrum;
+      font-family: $wigrum;
       font-size: 21px;
       line-height: 28px;
       letter-spacing: -0.1px;

@@ -7,7 +7,7 @@
   }
   background-color: #FBFCFD;
   h4 {
-    @include font-wigrum;
+    font-family: $wigrum;
     margin-bottom: 16px;
   }
   p {

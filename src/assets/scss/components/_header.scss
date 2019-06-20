@@ -1,6 +1,6 @@
 .header {
   background-color: $white;
-  img {
+  img.logo {
     margin-left: 40px;
   }
   &.dark {
@@ -8,6 +8,24 @@
     color: $white;
     h1.headline {
       color: white !important;
+      font-size: 56px;
+      line-height: 66px;
+      letter-spacing: -1.25px;
+    }
+    .wrapper-inner {
+      padding-bottom: 0 !important;
+    }
+    p.lead {
+      color: $white !important;
+      span {
+        color: $owner-yellow;
+      }
+      font-family: $wigrum;
+      font-size: 21px;
+      font-weight: bold;
+      height: 64px;
+      letter-spacing: -0.2px;
+      line-height: 32px;
     }
   }
 }

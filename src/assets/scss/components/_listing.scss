@@ -14,8 +14,8 @@
     font-weight: 400;
     font-family: $wigrum;
   }
-  img {
-    margin-bottom: 16px !important;
+  img.unit {
+    margin-bottom: 12px !important;
     &.small-float-center {
       margin-left: 0 !important;
       margin-right: 0 !important;
@@ -33,5 +33,29 @@
   small {
     text-transform:uppercase;
     font-size: 10px;
+  }
+  .attributes {
+    color: $dusk-lightest;
+    font-family: $wigrum ;
+    font-size: 14px;
+    font-weight: 500;
+    height: 16px;
+    letter-spacing: 0.44px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+  .rating {
+    margin-top: 8px;
+    display: inline-block !important;
+    height: 16px;`
+  }
+  .reviews {
+    margin-left: 8px;
+    color: $lake;
+    font-family: NunitoSans-SemiBold;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    top:0;
   }
 }

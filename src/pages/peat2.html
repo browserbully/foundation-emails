@@ -4,17 +4,20 @@ subject: Need an excuse to get away this weekend?
 
 <wrapper class="header dark">
   <container>
-    <row class="collapse">
+    <spacer size="26"></spacer>
+    <row class="">
       <columns large="12" small="6">
         <img width="246" height="48" src="{{root}}assets/img/logos/Logos_Lockup_Horizontal_Color@2x.png" alt="Vacasa">
       </columns>
     </row>
     <spacer size="42"></spacer>
     <row>
-      <h1 class="headline">Your vacation is our full-time job</h1>
-      {{#if peat-data.percent_max}}
-      <p class="lead"><span>Save up to {{peat-data.percent_max}}&#37;</span> by booking at the last minute. Browse our best deals for this upcoming weekend near you.</p>
-      {{/if}} {{!-- peat-data.percent_max --}}
+      <columns>
+        <h1 class="headline">Your vacation is our full-time job</h1>
+        {{#if peat-data.percent_max}}
+        <p class="lead"><span>Save up to {{peat-data.percent_max}}&#37;</span> by booking at the last minute. Browse our best deals for this upcoming weekend near you.</p>
+        {{/if}} {{!-- peat-data.percent_max --}}
+      </columns>
     </row>
     <spacer size="16"></spacer>
     <row>
@@ -31,28 +34,36 @@ subject: Need an excuse to get away this weekend?
 
   <spacer size="40"></spacer>
 
-  {{#if peat-data.city}}
-  {{#each peat-data.city}}
-
-  <row>
+  <row class="">
     <columns>
-      <h2 class="section-title">{{#if this.name}}{{this.name}}{{/if}}, {{#if this.state_abbreviated}}{{this.state_abbreviated}}{{/if}}</h2>
+      <h2 class="section-title">Boulder, CO</h2>
     </columns>
   </row>
 
   <row>
       <columns>
-        <img class="float-left" width="14" height="16" src="{{root}}assets/img/icons/Icons_ Feather_caret-down@2x.png" />
-        <p>&nbsp;&nbsp;{{#if this.state}}{{../state}}{{/if}}</p>
+        <img class="float-left" width="14" height="16" src="{{root}}assets/img/icons/calendar/Icons_ Feather_caret-down@2x.png" />
+        <p>&nbsp;&nbsp;November 11–22, 2019</p>
       </columns>
   </row>
 
-  <row class="collapse">
-    <columns large="6"><img src="https://placehold.it/300x150/777777/&text=These columns touch" alt=""></columns>
-    <columns large="6"><img src="https://placehold.it/300x150/999999/&text=These columns touch" alt=""></columns>
+  <spacer size="8"></spacer>
+
+  <row class="listing">
+    <columns large="6">
+      <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="tiny rounded">Save 18&#37;</button>
+      <img class="unit" src="https://placehold.it/267x201/777777/&text=Unit Image" alt="">
+      <span class="attributes">2 Bed | 2 Bath | Sleeps 10</span>
+      <div class="rating">
+          <img class="rating" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5@2x.png" alt=""><span class="reviews">54 Reviews</span>
+      </div>
+    </columns>
+    <columns large="6">
+      <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="tiny rounded">Save 36&#37;</button>
+      <img src="https://placehold.it/267x201/777777/&text=Unit Image" alt="">
+    </columns>
   </row>
-  {{/if}} {{!-- peat-data.city --}}
-  {{/each}} {{!-- peat-data.city --}}
+
 
 
 

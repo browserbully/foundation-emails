@@ -1,5 +1,6 @@
 table.button {
   border-collapse: separate;
+  margin-bottom: 8px !important;
   tr:first-child td:first-child { border-top-left-radius: $global-radius; }
   tr:first-child td:last-child { border-top-right-radius: $global-radius; }
   tr:last-child td:first-child { border-bottom-left-radius: $global-radius; }
@@ -48,14 +49,11 @@ table.button {
       tr:last-child td:last-child { border-bottom-right-radius: 26px; }
       td {
         padding: 0;
-  //       background-color: transparent;
         a {
           font-weight: 700;
+          line-height: 16px;
           text-transform: uppercase;
-  //         border: none;
-          // border-radius: 13px;
-  //         background-color: $primary-color;
-          padding: 4px 11px;
+          padding: 4px 20px 4px 20px;
         }
       }
     }

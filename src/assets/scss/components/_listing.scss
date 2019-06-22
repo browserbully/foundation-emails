@@ -1,4 +1,7 @@
 .listing {
+  a {
+    text-decoration: none;
+  }
   margin-bottom: 40px;
   th.columns {
     padding-bottom: 0;
@@ -46,8 +49,9 @@
   }
   .rating {
     margin-top: 8px;
+  }
+  .stars {
     display: inline-block !important;
-    height: 16px;`
   }
   .reviews {
     margin-left: 8px;
@@ -55,7 +59,24 @@
     font-family: NunitoSans-SemiBold;
     font-size: 12px;
     font-weight: 600;
-    line-height: 24px;
-    top:0;
+    vertical-align: bottom;
+    display: inline-block !important;
+  }
+  p {
+    margin-top: 8px;
+  }
+  .current-price {
+    font-weight: 600;
+  }
+  .previous-price {
+    text-decoration: line-through;
+    color: $dusk-lightest;
+    font-size: 15px;
+  }
+  .per-night {
+    text-transform: uppercase;
+    font-size: 12px !important;
+    color: $dusk-light;
+    font-weight: 600;
   }
 }

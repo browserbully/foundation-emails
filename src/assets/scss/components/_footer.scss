@@ -1,20 +1,22 @@
 .footer {
-  th.columns.first.last {
-    padding-top: 40px !important;
-  }
-  th.columns.story {
-    padding-left: 40px !important;
-  }
   background-color: #FBFCFD;
-  h4 {
-    font-family: $wigrum;
-    margin-bottom: 16px;
+  table.container {
+    background-color: #FBFCFD;
   }
+  h4 {
+    font-family: $wigrum !important;
+    margin-bottom: 16px;
+    font-weight: 500 !important;
+  }
+}
+
+.legal {
   p {
     &.small {
       font-size: 10px;
       color: $medium-gray;
       padding-top: 6px;
+      line-height: 18px;
     }
     &.links a {
       font-size: 12px;

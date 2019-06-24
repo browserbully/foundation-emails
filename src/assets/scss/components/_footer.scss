@@ -1,16 +1,32 @@
 .footer {
-  background-color: #FBFCFD;
+  background-color: $midnight-4;
   table.container {
-    background-color: #FBFCFD;
+    background-color: $midnight-4;
   }
   h4 {
     font-family: $wigrum !important;
     margin-bottom: 16px;
     font-weight: 500 !important;
   }
+  .logo {
+    margin-right: 40px;
+  }
+}
+
+// Responsive image override
+@media only screen and (max-width: 710px) {
+  table.body img.logo {
+      width: 89px !important;
+      height: 64px !important;
+      margin-bottom: 32px;
+  }
 }
 
 .legal {
+  a {
+    text-decoration: none !important;
+    color: $lake;
+  }
   p {
     &.small {
       font-size: 10px;
@@ -19,12 +35,19 @@
       line-height: 18px;
     }
     &.links a {
-      font-size: 12px;
-      color: $dark-gray;
-      text-decoration: none;
+      color: $midnight-60;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 16px;
     }
     .separator {
       color: $light-gray;
     }
+  }
+  .copyright {
+    color: $light-gray;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
   }
 }

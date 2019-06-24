@@ -53,7 +53,7 @@ subject: Need an excuse to get away this weekend?
     <columns large="6">
       <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="tiny rounded">Save 18&#37;</button>
       <a href="#">
-        <img class="unit" src="https://placehold.it/267x201/777777/&text=Unit Image" alt="">
+        <img class="unit" width="267" height="202" src="https://placehold.it/534x402/777777/&text=Unit Image" alt="">
       </a>
       <a href="#">
         <span class="attributes">2 Bed | 2 Bath | Sleeps 6</span>
@@ -70,7 +70,7 @@ subject: Need an excuse to get away this weekend?
     <columns large="6">
       <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="tiny rounded">Save 18&#37;</button>
       <a href="#">
-        <img class="unit" src="https://placehold.it/267x201/777777/&text=Unit Image" alt="">
+        <img class="unit" width="267" height="202" src="https://placehold.it/534x402/777777/&text=Unit Image" alt="">
       </a>
       <a href="#">
         <span class="attributes">2 Bed | 2 Bath | Sleeps 6</span>
@@ -105,12 +105,24 @@ subject: Need an excuse to get away this weekend?
         <img src="{{root}}assets/img/components/search-bar@2x.png" />
       </columns>
     </row>
+
+    <spacer size="32"></spacer>
+
     <row>
-        <columns>
-            <img class="unit" src="https://placehold.it/95x64/777777/&text=Unit Image" alt="">
-            <p>You’ve received this email because you stayed with us in Lincoln City, Oregon in 2018.</p>
-        </columns>
+      <columns>
+          <row class="collapse">
+            <columns large="3">
+              <img class="past-unit" src="https://placehold.it/95x64/777777/&text=Unit Image" alt="">
+            </columns>
+            <columns large="9">
+              <p>You’ve received this email because you stayed with us in Lincoln City, Oregon in 2018.</p>
+            </columns>
+          </row>
+      </columns>
     </row>
+
+    <spacer size="32"></spacer>
+
   </container>
 </wrapper>
 
@@ -120,17 +132,17 @@ subject: Need an excuse to get away this weekend?
     <row>
       <columns>
         <row>
-          <columns small="3">
-            <img src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
+          <columns large="3">
+            <img class="logo" src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
           </columns>
-          <columns small="9" class="story">
+          <columns large="9">
             <h4>For the love of vacation homes.</h4>
             <p>It’s why we’re here. We bring families and friends together in thousands of vacation homes around the world.</p>
           </columns>
         </row>
       </columns>
     </row>
-    <spacer size="36"></spacer>
+    <spacer size="16"></spacer>
   </container>
 </wrapper>
 
@@ -139,8 +151,8 @@ subject: Need an excuse to get away this weekend?
   <row class="legal">
     <columns>
       <p class="small">The discount is based on the highest price of the offer under the same conditions from the same dates for the upcoming year.</p>
-      <p class="small">Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. Click here for more information about Vacasa's licensed real estate brokerage/property manager in your state. Vacasa’s licensed real estate brokerages/property managers include: Vacasa Alabama LLC; Vacasa Arizona LLC; Vacasa Florida LLC; Vacasa Louisiana L.L.C. (licensed in Louisiana); Vacasa Michigan LLC 947-800-5979; Vacasa Nevada LLC; Vacasa New Hampshire LLC, 603-782-9591, Michael Scanlan, Principal Broker, 314 Lafayette Road, Suite 1A, Hampton, NH 03842; Vacasa New Mexico LLC, 503-345-9399; Vacasa New York LLC, 888-433-0068; Vacasa North Carolina LLC; Vacasa Pennsylvania LLC; Vacasa Real Estate LLC (licensed in Colorado 720-727-9358, Idaho, and Oregon); Vacasa Resort Rentals of Hilton Head Island LLC; Vacasa South Carolina LLC; Vacasa Tennessee LLC; Vacasa Vacation Rentals of Hawaii LLC, 3350 Lower Honoapiilani Road, Suite 600, Lahaina, HI 96761; Vacasa Vacation Rentals of Montana LLC, Rickie Miller, Licensed Property Manager; Vacasa Virginia LLC; Vacasa Wisconsin LLC.</p>
-      <p>&copy; 2019 Vacasa, LLC | 850 NW 13th Ave. Portland, OR 97209</p>
+      <p class="small">Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. <a href="https://www.vacasa.com/real-estate/real-estate-entities">Click here</a> for more information about Vacasa's licensed real estate brokerage/property manager in your state. Vacasa’s licensed real estate brokerages/property managers include: Vacasa Alabama LLC; Vacasa Arizona LLC; Vacasa Florida LLC; Vacasa Louisiana L.L.C. (licensed in Louisiana); Vacasa Michigan LLC 947-800-5979; Vacasa Nevada LLC; Vacasa New Hampshire LLC, 603-782-9591, Michael Scanlan, Principal Broker, 314 Lafayette Road, Suite 1A, Hampton, NH 03842; Vacasa New Mexico LLC, 503-345-9399; Vacasa New York LLC, 888-433-0068; Vacasa North Carolina LLC; Vacasa Pennsylvania LLC; Vacasa Real Estate LLC (licensed in Colorado 720-727-9358, Idaho, and Oregon); Vacasa Resort Rentals of Hilton Head Island LLC; Vacasa South Carolina LLC; Vacasa Tennessee LLC; Vacasa Vacation Rentals of Hawaii LLC, 3350 Lower Honoapiilani Road, Suite 600, Lahaina, HI 96761; Vacasa Vacation Rentals of Montana LLC, Rickie Miller, Licensed Property Manager; Vacasa Virginia LLC; Vacasa Wisconsin LLC.</p>
+      <p class="copyright">&copy; 2019 Vacasa, LLC | 850 NW 13th Ave. Portland, OR 97209</p>
       <p class="links"><a href="<%asm_group_unsubscribe_raw_url%>">Unsubscribe</a>&nbsp;&nbsp;<span class="separator">|</span>&nbsp;&nbsp;<a href="https://www.vacasa.com/terms-of-service">Privacy &amp; Terms</a></p>
     </columns>
   </row>

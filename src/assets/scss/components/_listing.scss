@@ -80,3 +80,11 @@
     font-weight: 600;
   }
 }
+
+// Responsive image override
+@media only screen and (max-width: 710px) {
+  table.body img.stars {
+      width: 101px !important;
+      height: 16px !important;
+  }
+}

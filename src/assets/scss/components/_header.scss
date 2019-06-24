@@ -35,3 +35,12 @@
     }
   }
 }
+
+// Responsive image override
+@media only screen and (max-width: 710px) {
+  table.body img.past-unit {
+      width: 95px !important;
+      height: 64px !important;
+      margin-bottom: 8px;
+  }
+}

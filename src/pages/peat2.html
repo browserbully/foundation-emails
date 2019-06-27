@@ -7,13 +7,13 @@ subject: Need an excuse to get away this weekend?
     <spacer size="26"></spacer>
     <row class="">
       <columns large="12" small="6">
-        <img width="246" height="48" src="{{root}}assets/img/logos/Logos_Lockup_Horizontal_Color@2x.png" alt="Vacasa">
+        <img width="246" height="48" src="{{root}}assets/img/logos/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
       </columns>
     </row>
     <spacer size="42"></spacer>
     <row>
       <columns>
-        <h1 class="headline">Your vacation is our full-time job</h1>
+        <span><h1 class="headline">Your vacation is our full-time job</h1></span>
         {{#if peat-data.percent_max}}
         <p class="lead"><span>Save up to {{peat-data.percent_max}}&#37;</span> by booking at the last minute. Browse our best deals for this upcoming weekend near you.</p>
         {{/if}} {{!-- peat-data.percent_max --}}
@@ -23,7 +23,7 @@ subject: Need an excuse to get away this weekend?
     <row>
       <columns>
         <center>
-          <img src="{{root}}assets/img/illustrations/Illustration_Homes_Horizontal_Four@2x.png" alt="Illustrated homes">
+          <img src="{{root}}assets/img/illustrations/Illustration_Homes_Horizontal_Four.png" alt="Illustrated homes">
         </center>
       </columns>
     </row>
@@ -32,65 +32,137 @@ subject: Need an excuse to get away this weekend?
 
 <container>
 
+  {{#if peat-data.city}}
+  {{#each peat-data.city}}
   <spacer size="40"></spacer>
 
   <row class="">
     <columns>
-      <h2 class="section-title">Boulder, CO</h2>
+      <h2 class="section-title">{{#if name}}{{name}}{{/if}}{{#if state_abbreviated}}, {{state_abbreviated}}{{/if}}</h2>
     </columns>
   </row>
 
+  {{#if dates_long_format}}
   <row>
       <columns>
-        <img class="float-left" width="14" height="16" src="{{root}}assets/img/icons/calendar/Icons_ Feather_caret-down@2x.png" />
-        <p>&nbsp;&nbsp;November 11–22, 2019</p>
+        <img class="icon float-left" width="14" height="16" src="{{root}}assets/img/icons/calendar/Icons_ Feather_caret-down.png" />
+        <p>&nbsp;&nbsp;{{dates_long_format}}</p>
       </columns>
   </row>
+  {{/if}} {{!-- dates --}}
 
+  {{#if unit_listing}}
   <spacer size="8"></spacer>
 
+  {{#if unit_listing.[0]}}
   <row class="listing">
+
+    {{#with unit_listing.[0]}}
     <columns large="6">
-      <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="tiny rounded">Save 18&#37;</button>
-      <a href="#">
-        <img class="unit" width="267" height="202" src="https://placehold.it/534x402/777777/&text=Unit Image" alt="">
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
       <a href="#">
-        <span class="attributes">2 Bed | 2 Bath | Sleeps 6</span>
+        <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
       </a>
       <div class="rating">
-          <a href="#">
-            <img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5@2x.png" alt=""><span class="reviews">54 Reviews</span>
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+            <img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">{{reviews}} Reviews</span>
           <a href="#">
       </div>
-      <a href="#">
-        <p><span class="current-price">$183</span>&nbsp;&nbsp;<span class="previous-price">$224</span>&nbsp;<span class="per-night">avg/night</span></p>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
     </columns>
+    {{/with}} {{!-- unit_listing[0] --}}
+
+    {{#if unit_listing.[1]}}
+    {{#with unit_listing.[1]}}
     <columns large="6">
-      <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="tiny rounded">Save 18&#37;</button>
-      <a href="#">
-        <img class="unit" width="267" height="202" src="https://placehold.it/534x402/777777/&text=Unit Image" alt="">
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
       <a href="#">
-        <span class="attributes">2 Bed | 2 Bath | Sleeps 6</span>
+        <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
       </a>
       <div class="rating">
-          <a href="#">
-            <img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5@2x.png" alt=""><span class="reviews">54 Reviews</span>
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+            <img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">{{reviews}} Reviews</span>
           <a href="#">
       </div>
-      <a href="#">
-        <p><span class="current-price">$183</span>&nbsp;&nbsp;<span class="previous-price">$224</span>&nbsp;<span class="per-night">avg/night</span></p>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
     </columns>
+    {{/with}} {{!-- unit_listing[1] --}}
+    {{/if}} {{!-- unit_listing[1] --}}
+
   </row>
+  {{/if}} {{!-- unit_listing[0] --}}
+
+  {{#if unit_listing.[2]}}
+  <row class="listing">
+
+    {{#with unit_listing.[2]}}
+    {{#if unit_listing.[3]}}
+    <columns large="6">
+    {{else}}
+    <columns large="12">
+    {{/if}}
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="#">
+        <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
+      </a>
+      <div class="rating">
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+            <img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">{{reviews}} Reviews</span>
+          <a href="#">
+      </div>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+    {{/with}} {{!-- unit_listing[2] --}}
+
+    {{#if unit_listing.[3]}}
+    {{#with unit_listing.[3]}}
+    <columns large="6">
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="#">
+        <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
+      </a>
+      <div class="rating">
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+            <img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">{{reviews}} Reviews</span>
+          <a href="#">
+      </div>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+        <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+    {{/with}} {{!-- unit_listing[3] --}}
+    {{/if}} {{!-- unit_listing[3] --}}
+
+  </row>
+  {{/if}} {{!-- unit_listing[2] --}}
 
   <row>
     <columns>
-      <button href="https://www.vacasa.com/unit.php?UnitID=\{{this.id}}" class="large secondary radius expanded">View All Homes in Boulder, CO (11/03-11/05)</button>
+      <button href="https://www.vacasa.com/usa/{{state}}/{{name_url}}/" target="_blank" class="large secondary radius expanded">View All Homes in {{name}}, {{state_abbreviated}} ({{dates_short_format}})</button>
     </columns>
   </row>
+  {{/if}} {{!-- unit_listing --}}
+
+  {{/each}} {{!-- peat-data.city --}}
+  {{/if}} {{!-- peat-data.city --}}
 
   <spacer size="72"></spacer>
 
@@ -102,7 +174,9 @@ subject: Need an excuse to get away this weekend?
     <row>
       <columns>
         <h2 class="headline">Find a vacation rental</h2>
-        <img src="{{root}}assets/img/components/search-bar@2x.png" />
+        <a href="https://vacasa.com/" target="_blank" >
+          <img src="{{root}}assets/img/components/search-bar.png" />
+        </a>
       </columns>
     </row>
 
@@ -111,9 +185,11 @@ subject: Need an excuse to get away this weekend?
     <row>
       <columns>
           <row class="collapse">
+            {{#if peat-data.previous_unit_image}}
             <columns large="3">
-              <img class="past-unit" src="https://placehold.it/95x64/777777/&text=Unit Image" alt="">
+              <img class="past-unit" src="{{peat-data.previous_unit_image}}?q=45&w=95&h=64&fit=crop" alt="">
             </columns>
+            {{/if}}
             <columns large="9">
               <p>You’ve received this email because you stayed with us in Lincoln City, Oregon in 2018.</p>
             </columns>
@@ -133,7 +209,9 @@ subject: Need an excuse to get away this weekend?
       <columns>
         <row>
           <columns large="3">
-            <img class="logo" src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
+            <a href="https://vacasa.com/" target="_blank" >
+              <img class="logo" src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
+            </a>
           </columns>
           <columns large="9">
             <h4>For the love of vacation homes.</h4>

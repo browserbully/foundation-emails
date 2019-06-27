@@ -1,3 +1,6 @@
+h1 span {
+  color: $white !important;
+}
 .header {
   background-color: $white;
   img.logo {
@@ -29,7 +32,6 @@
       font-family: $wigrum;
       font-size: 21px;
       font-weight: 500;
-      height: 64px;
       letter-spacing: -0.2px;
       line-height: 32px;
     }
@@ -42,5 +44,16 @@
       width: 95px !important;
       height: 64px !important;
       margin-bottom: 8px;
+  }
+  .header {
+    h1.headline {
+      font-size: 38px !important;
+      line-height: 40px !important;
+      letter-spacing: -0.2px !important;
+    }
+    p.lead {
+      font-size: 16px !important;
+      line-height: 24px !important;
+    }
   }
 }

@@ -9,7 +9,7 @@ h1.headline {
 .headline,
 .lead,
 .section-title {
-  color: $midnight;
+  color: $black;
   hyphens: none;
 }
 
@@ -24,4 +24,17 @@ p.lead {
   font-weight: 500 !important;
   font-size: 28px;
   line-height: 36px;
+}
+
+
+// Responsive image override
+@media only screen and (max-width: 710px) {
+  .section-title {
+    font-size: 21px !important;
+    line-height: 28px !important;
+  }
+  table.body img.icon {
+    width: 14px !important;
+    height: 16px !important;
+  }
 }

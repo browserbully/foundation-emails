@@ -1,0 +1,237 @@
+---
+subject: Need an excuse to get away this weekend?
+---
+
+<wrapper class="header dark">
+  <container>
+    <spacer size="26"></spacer>
+    <row class="">
+      <columns large="12" small="6">
+        <img width="246" height="48" src="\{{root}}assets/img/logos/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
+      </columns>
+    </row>
+    <spacer size="42"></spacer>
+    <row>
+      <columns>
+        <span><h1 class="headline">Your vacation is our full-time job</h1></span>
+        \{{#if peat-data.percent_max}}
+        <p class="lead"><span>Save up to \{{peat-data.percent_max}}&#37;</span> by booking at the last minute. Browse our best deals for this upcoming weekend near you.</p>
+        \{{/if}} \{{!-- peat-data.percent_max --}}
+      </columns>
+    </row>
+    <spacer size="16"></spacer>
+    <row>
+      <columns>
+        <center>
+          <img src="\{{root}}assets/img/illustrations/Illustration_Homes_Horizontal_Four.png" alt="Illustrated homes">
+        </center>
+      </columns>
+    </row>
+  </container>
+</wrapper>
+
+<container>
+
+  \{{#if peat-data.city}}
+  \{{#each peat-data.city}}
+  <spacer size="40"></spacer>
+
+  <row class="">
+    <columns>
+      <h2 class="section-title">\{{#if name}}\{{name}}\{{/if}}\{{#if state_abbreviated}}, \{{state_abbreviated}}\{{/if}}</h2>
+    </columns>
+  </row>
+
+  \{{#if dates_long_format}}
+  <row>
+      <columns>
+        <img class="icon float-left" width="14" height="16" src="\{{root}}assets/img/icons/calendar/Icons_ Feather_caret-down.png" />
+        <p>&nbsp;&nbsp;\{{dates_long_format}}</p>
+      </columns>
+  </row>
+  \{{/if}} \{{!-- dates --}}
+
+  \{{#if unit_listing}}
+  <spacer size="8"></spacer>
+
+  \{{#if unit_listing.[0]}}
+  <row class="listing">
+
+    \{{#with unit_listing.[0]}}
+    <columns large="6">
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}" class="tiny rounded">Save \{{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <img class="unit" src="\{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="#">
+        <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
+      </a>
+      <div class="rating">
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+            <img class="stars" width="101" height="16" src="\{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">\{{reviews}} Reviews</span>
+          <a href="#">
+      </div>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+    \{{/with}} \{{!-- unit_listing[0] --}}
+
+    \{{#if unit_listing.[1]}}
+    \{{#with unit_listing.[1]}}
+    <columns large="6">
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}" class="tiny rounded">Save \{{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <img class="unit" src="\{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="#">
+        <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
+      </a>
+      <div class="rating">
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+            <img class="stars" width="101" height="16" src="\{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">\{{reviews}} Reviews</span>
+          <a href="#">
+      </div>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+    \{{/with}} \{{!-- unit_listing[1] --}}
+    \{{/if}} \{{!-- unit_listing[1] --}}
+
+  </row>
+  \{{/if}} \{{!-- unit_listing[0] --}}
+
+  \{{#if unit_listing.[2]}}
+  <row class="listing">
+
+    \{{#with unit_listing.[2]}}
+    \{{#if unit_listing.[3]}}
+    <columns large="6">
+    \{{else}}
+    <columns large="12">
+    \{{/if}}
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}" class="tiny rounded">Save \{{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <img class="unit" src="\{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="#">
+        <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
+      </a>
+      <div class="rating">
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+            <img class="stars" width="101" height="16" src="\{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">\{{reviews}} Reviews</span>
+          <a href="#">
+      </div>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+    \{{/with}} \{{!-- unit_listing[2] --}}
+
+    \{{#if unit_listing.[3]}}
+    \{{#with unit_listing.[3]}}
+    <columns large="6">
+      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}" class="tiny rounded">Save \{{percent}}&#37;</button>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <img class="unit" src="\{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="#">
+        <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
+      </a>
+      <div class="rating">
+          <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+            <img class="stars" width="101" height="16" src="\{{root}}assets/img/icons/stars/stars_5.png" alt=""><span class="reviews">\{{reviews}} Reviews</span>
+          <a href="#">
+      </div>
+      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID=\{{id}}">
+        <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+    \{{/with}} \{{!-- unit_listing[3] --}}
+    \{{/if}} \{{!-- unit_listing[3] --}}
+
+  </row>
+  \{{/if}} \{{!-- unit_listing[2] --}}
+
+  <row>
+    <columns>
+      <button href="https://www.vacasa.com/usa/\{{state}}/\{{name_url}}/" target="_blank" class="large secondary radius expanded">View All Homes in \{{name}}, \{{state_abbreviated}} (\{{dates_short_format}})</button>
+    </columns>
+  </row>
+  \{{/if}} \{{!-- unit_listing --}}
+
+  \{{/each}} \{{!-- peat-data.city --}}
+  \{{/if}} \{{!-- peat-data.city --}}
+
+  <spacer size="72"></spacer>
+
+</container>
+
+<wrapper class="header dark">
+  <container>
+    <spacer size="26"></spacer>
+    <row>
+      <columns>
+        <h2 class="headline">Find a vacation rental</h2>
+        <a href="https://vacasa.com/" target="_blank" >
+          <img src="\{{root}}assets/img/components/search-bar.png" />
+        </a>
+      </columns>
+    </row>
+
+    <spacer size="32"></spacer>
+
+    <row>
+      <columns>
+          <row class="collapse">
+            \{{#if peat-data.previous_unit_image}}
+            <columns large="3">
+              <img class="past-unit" src="\{{peat-data.previous_unit_image}}?q=45&w=95&h=64&fit=crop" alt="">
+            </columns>
+            \{{/if}}
+            <columns large="9">
+              <p>You’ve received this email because you stayed with us in Lincoln City, Oregon in 2018.</p>
+            </columns>
+          </row>
+      </columns>
+    </row>
+
+    <spacer size="32"></spacer>
+
+  </container>
+</wrapper>
+
+<wrapper class="footer">
+  <container>
+    <spacer size="36"></spacer>
+    <row>
+      <columns>
+        <row>
+          <columns large="3">
+            <a href="https://vacasa.com/" target="_blank" >
+              <img class="logo" src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
+            </a>
+          </columns>
+          <columns large="9">
+            <h4>For the love of vacation homes.</h4>
+            <p>It’s why we’re here. We bring families and friends together in thousands of vacation homes around the world.</p>
+          </columns>
+        </row>
+      </columns>
+    </row>
+    <spacer size="16"></spacer>
+  </container>
+</wrapper>
+
+<container>
+  <spacer size="36"></spacer>
+  <row class="legal">
+    <columns>
+      <p class="small">The discount is based on the highest price of the offer under the same conditions from the same dates for the upcoming year.</p>
+      <p class="small">Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. <a href="https://www.vacasa.com/real-estate/real-estate-entities">Click here</a> for more information about Vacasa's licensed real estate brokerage/property manager in your state. Vacasa’s licensed real estate brokerages/property managers include: Vacasa Alabama LLC; Vacasa Arizona LLC; Vacasa Florida LLC; Vacasa Louisiana L.L.C. (licensed in Louisiana); Vacasa Michigan LLC 947-800-5979; Vacasa Nevada LLC; Vacasa New Hampshire LLC, 603-782-9591, Michael Scanlan, Principal Broker, 314 Lafayette Road, Suite 1A, Hampton, NH 03842; Vacasa New Mexico LLC, 503-345-9399; Vacasa New York LLC, 888-433-0068; Vacasa North Carolina LLC; Vacasa Pennsylvania LLC; Vacasa Real Estate LLC (licensed in Colorado 720-727-9358, Idaho, and Oregon); Vacasa Resort Rentals of Hilton Head Island LLC; Vacasa South Carolina LLC; Vacasa Tennessee LLC; Vacasa Vacation Rentals of Hawaii LLC, 3350 Lower Honoapiilani Road, Suite 600, Lahaina, HI 96761; Vacasa Vacation Rentals of Montana LLC, Rickie Miller, Licensed Property Manager; Vacasa Virginia LLC; Vacasa Wisconsin LLC.</p>
+      <p class="copyright">&copy; 2019 Vacasa, LLC | 850 NW 13th Ave. Portland, OR 97209</p>
+      <p class="links"><a href="<%asm_group_unsubscribe_raw_url%>">Unsubscribe</a>&nbsp;&nbsp;<span class="separator">|</span>&nbsp;&nbsp;<a href="https://www.vacasa.com/terms-of-service">Privacy &amp; Terms</a></p>
+    </columns>
+  </row>
+</container>

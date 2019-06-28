@@ -1,15 +1,17 @@
 {
   "percent_max": 25,
   "previous_unit_image": "https://vacasa-units.imgix.net/1444814.jpg",
+  "prev_res_city": "City Name",
+  "prev_res_state": "State Name",
+  "prev_res_year": "0000",
   "city": [
     {
       "name": "McCall",
       "name_url": "McCall",
       "state": "Idaho",
-      "state_": "Idaho",
       "state_abbreviated": "ID",
-      "dates_long_format": "November 21—25, 2019",
-      "dates_short_format": "11/21—25",
+      "dates_long_format": "November 21–25, 2019",
+      "dates_short_format": "11/21–25",
       "unit_listing": [
         {
           "url": "https://vacasa-units.imgix.net/1444815.jpg",
@@ -19,10 +21,26 @@
           "bed": 12,
           "bath": 24,
           "sleeps": 100,
+          "price": 1220,
+          "previous_price": "2400",
+          "percent": 9,
+          "rating_average_score": 1,
+          "rating_count": 13
+        },
+        {
+          "url": "https://vacasa-units.imgix.net/1444815.jpg",
+          "id": 1680,
+          "name": "Thing 2",
+          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "bed": 12,
+          "bath": 24,
+          "sleeps": 100,
           "reviews": 13,
           "price": 1220,
           "previous_price": "2400",
-          "percent": 9
+          "percent": 9,
+          "rating_average_score": 2,
+          "rating_count": 1
         },
         {
           "url": "https://vacasa-units.imgix.net/1444815.jpg",
@@ -35,20 +53,9 @@
           "reviews": 13,
           "price": 1220,
           "previous_price": "2400",
-          "percent": 9
-        },
-        {
-          "url": "https://vacasa-units.imgix.net/1444815.jpg",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "bed": 12,
-          "bath": 24,
-          "sleeps": 100,
-          "reviews": 13,
-          "price": 1220,
-          "previous_price": "2400",
-          "percent": 9
+          "percent": 9,
+          "rating_average_score": 3,
+          "rating_count": 100
         }
       ]
     },
@@ -57,20 +64,36 @@
       "name_url": "Sun-Valley",
       "state": "Idaho",
       "state_abbreviated": "ID",
-      "dates_long_format": "November 21—25, 2019",
-      "dates_short_format": "11/21—25",
+      "dates_long_format": "November 21–25, 2019",
+      "dates_short_format": "11/21–25",
       "unit_listing": [
         {
           "url": "https://vacasa-units.imgix.net/1444815.jpg",
           "id": 1680,
-          "name": "Crystal Castal",
+          "name": "1 Crystal Castal",
           "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           "bed": 12,
           "bath": 24,
           "sleeps": 100,
           "price": 500,
           "previous_price": "2400",
-          "percent": 25
+          "percent": 25,
+          "rating_average_score": 4,
+          "rating_count": 1300
+        },
+        {
+          "url": "https://vacasa-units.imgix.net/1444815.jpg",
+          "id": 1680,
+          "name": "Crystal Castal 2",
+          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "bed": 12,
+          "bath": 24,
+          "sleeps": 100,
+          "price": 500,
+          "previous_price": "2400",
+          "percent": 25,
+          "rating_average_score": 5,
+          "rating_count": 11300
         }
       ]
     }

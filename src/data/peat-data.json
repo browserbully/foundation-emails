@@ -1,6 +1,6 @@
 {
   "percent_max": 25,
-  "previous_unit_image": "https://vacasa-units.imgix.net/1444814.jpg",
+  "previous_unit_image": "vacasa-units.imgix.net/1444814.jpg",
   "prev_res_city": "City Name",
   "prev_res_state": "State Name",
   "prev_res_year": "0000",
@@ -14,48 +14,19 @@
       "dates_short_format": "11/21–25",
       "unit_listing": [
         {
-          "url": "https://vacasa-units.imgix.net/1444815.jpg",
+          "bath": 24,
+          "bed": 12,
+          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           "id": 1680,
           "name": "Crystal Castal",
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "bed": 12,
-          "bath": 24,
-          "sleeps": 100,
+          "percent": 9,
           "price": 1220,
           "previous_price": "2400",
-          "percent": 9,
           "rating_average_score": 1,
-          "rating_count": 13
-        },
-        {
-          "url": "https://vacasa-units.imgix.net/1444815.jpg",
-          "id": 1680,
-          "name": "Thing 2",
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "bed": 12,
-          "bath": 24,
+          "rating_count": 13,
           "sleeps": 100,
-          "reviews": 13,
-          "price": 1220,
-          "previous_price": "2400",
-          "percent": 9,
-          "rating_average_score": 2,
-          "rating_count": 1
-        },
-        {
-          "url": "https://vacasa-units.imgix.net/1444815.jpg",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "bed": 12,
-          "bath": 24,
-          "sleeps": 100,
-          "reviews": 13,
-          "price": 1220,
-          "previous_price": "2400",
-          "percent": 9,
-          "rating_average_score": 3,
-          "rating_count": 100
+          "url_image": "vacasa-units.imgix.net/1444815.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
         }
       ]
     },
@@ -68,34 +39,28 @@
       "dates_short_format": "11/21–25",
       "unit_listing": [
         {
-          "url": "https://vacasa-units.imgix.net/1444815.jpg",
-          "id": 1680,
-          "name": "1 Crystal Castal",
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "bed": 12,
           "bath": 24,
-          "sleeps": 100,
-          "price": 500,
-          "previous_price": "2400",
-          "percent": 25,
-          "rating_average_score": 4,
-          "rating_count": 1300
-        },
-        {
-          "url": "https://vacasa-units.imgix.net/1444815.jpg",
-          "id": 1680,
-          "name": "Crystal Castal 2",
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           "bed": 12,
-          "bath": 24,
-          "sleeps": 100,
-          "price": 500,
+          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "id": 1680,
+          "name": "Crystal Castal",
+          "percent": 9,
+          "price": 1220,
           "previous_price": "2400",
-          "percent": 25,
-          "rating_average_score": 5,
-          "rating_count": 11300
+          "rating_average_score": 1,
+          "rating_count": 13,
+          "sleeps": 100,
+          "url_image": "vacasa-units.imgix.net/1444815.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
         }
       ]
     }
-  ]
+  ],
+  "previous_reservation": {
+    "year": null,
+    "unit_id": null,
+    "city": null,
+    "state": null,
+    "image": null
+  }
 }

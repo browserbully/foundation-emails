@@ -7,7 +7,9 @@ subject: Need an excuse to get away this weekend?
     <spacer size="26"></spacer>
     <row class="">
       <columns large="12" small="6">
-        <img width="246" height="48" src="{{root}}assets/img/logos/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
+        <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_logo" >
+          <img width="246" height="48" src="{{root}}assets/img/logos/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
+        </a>
       </columns>
     </row>
     <spacer size="42"></spacer>
@@ -23,7 +25,9 @@ subject: Need an excuse to get away this weekend?
     <row>
       <columns>
         <center>
-          <img src="{{root}}assets/img/illustrations/Illustration_Homes_Horizontal_Four.png" alt="Illustrated homes">
+          <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_illustration" >
+            <img src="{{root}}assets/img/illustrations/Illustration_Homes_Horizontal_Four.png" alt="Illustrated homes">
+          </a>
         </center>
       </columns>
     </row>
@@ -59,16 +63,16 @@ subject: Need an excuse to get away this weekend?
 
     {{#with unit_listing.[0]}}
     <columns large="6">
-      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
-        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="{{url_unit}}&utm_content=position-1_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="{{url_unit}}&utm_content=position-1_image">
+        <img class="unit" src="https://{{url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="#">
+      <a href="{{url_unit}}&utm_content=position-1_filters">
         <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
+      <div class="rating"><a target="_blank" href="{{url_unit}}&utm_content=position-1_reviews">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
       </div>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+      <a target="_blank" href="{{url_unit}}&utm_content=position-1_price">
         <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
     </columns>
@@ -77,16 +81,16 @@ subject: Need an excuse to get away this weekend?
     {{#if unit_listing.[1]}}
     {{#with unit_listing.[1]}}
     <columns large="6">
-      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
-        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="{{url_unit}}&utm_content=position-2_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="{{url_unit}}&utm_content=position-2_image">
+        <img class="unit" src="https://{{url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="#">
+      <a href="{{url_unit}}&utm_content=position-2_filters">
         <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
+      <div class="rating"><a target="_blank" href="{{url_unit}}&utm_content=position-2_reviews">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
       </div>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+      <a target="_blank" href="{{url_unit}}&utm_content=position-2_price">
         <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
     </columns>
@@ -105,16 +109,16 @@ subject: Need an excuse to get away this weekend?
     {{else}}
     <columns large="12">
     {{/if}}
-      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
-        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="{{url_unit}}&utm_content=position-3_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="{{url_unit}}&utm_content=position-3_image">
+        <img class="unit" src="https://{{url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="#">
+      <a href="{{url_unit}}&utm_content=position-3_filters">
         <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
+      <div class="rating"><a target="_blank" href="{{url_unit}}&utm_content=position-3_reviews">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
       </div>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+      <a target="_blank" href="{{url_unit}}&utm_content=position-3_price">
         <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
     </columns>
@@ -123,16 +127,16 @@ subject: Need an excuse to get away this weekend?
     {{#if unit_listing.[3]}}
     {{#with unit_listing.[3]}}
     <columns large="6">
-      <button target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}" class="tiny rounded">Save {{percent}}&#37;</button>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
-        <img class="unit" src="{{url}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="{{url_unit}}&utm_content=position-4_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="{{url_unit}}&utm_content=position-4_image">
+        <img class="unit" src="https://{{url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="#">
+      <a href="{{url_unit}}&utm_content=position-4_filters">
         <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
+      <div class="rating"><a target="_blank" href="{{url_unit}}&utm_content=position-4_reviews">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="{{root}}assets/img/icons/stars/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
       </div>
-      <a target="_blank" href="https://www.vacasa.com/unit.php?UnitID={{id}}">
+      <a target="_blank" href="{{url_unit}}&utm_content=position-4_price">
         <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
     </columns>
@@ -144,7 +148,7 @@ subject: Need an excuse to get away this weekend?
 
   <row>
     <columns>
-      <button href="https://www.vacasa.com/usa/{{state}}/{{name_url}}/" target="_blank" class="large secondary radius expanded">View All Homes in {{name}}, {{state_abbreviated}} ({{dates_short_format}})</button>
+      <button href="https://www.vacasa.com/usa/{{state}}/{{name_url}}?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content={{name}}_search" target="_blank" class="large secondary radius expanded">View All Homes in {{name}}, {{state_abbreviated}} ({{dates_short_format}})</button>
     </columns>
   </row>
   {{/if}} {{!-- unit_listing --}}
@@ -162,28 +166,32 @@ subject: Need an excuse to get away this weekend?
     <row>
       <columns>
         <h2 class="headline">Find a vacation rental</h2>
-        <a href="https://vacasa.com/" target="_blank" >
+        <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=footer_search" target="_blank" >
           <img src="{{root}}assets/img/components/search-bar.png" />
         </a>
       </columns>
     </row>
 
+    {{#if peat-data.previous_reservation}}
+    {{#with peat-data.previous_reservation}}
     <spacer size="32"></spacer>
 
     <row>
       <columns>
           <row class="collapse">
-            {{#if peat-data.previous_unit_image}}
+            {{#if image}}
             <columns large="3">
-              <img class="past-unit" src="{{peat-data.previous_unit_image}}?q=45&w=95&h=64&fit=crop" alt="">
+              <img class="past-unit" src="{{image}}?q=45&w=95&h=64&fit=crop" alt="">
             </columns>
-            {{/if}}
+            {{/if}} {{!-- image --}}
             <columns large="9">
-              <p>You’ve received this email because you stayed with us in {{#if peat-data.prev_res_city}}{{peat-data.prev_res_city}}{{/if}}{{#if peat-data.prev_res_state}}, {{peat-data.prev_res_state}}{{/if}}{{#if peat-data.prev_res_year}} in {{peat-data.prev_res_year}}{{/if}}.</p>
+              <p>You’ve received this email because you previously stayed with us{{#if city}} in {{city}}{{/if}}{{#if state}}, {{state}}{{/if}}{{#if year}} in {{year}}{{/if}}.</p>
             </columns>
           </row>
       </columns>
     </row>
+    {{/with}} {{!-- peat-data.previous_reservation --}}
+    {{/if}} {{!-- peat-data.previous_reservation --}}
 
     <spacer size="32"></spacer>
 
@@ -197,7 +205,7 @@ subject: Need an excuse to get away this weekend?
       <columns>
         <row>
           <columns large="3">
-            <a href="https://vacasa.com/" target="_blank" >
+            <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=footer_logo" target="_blank" >
               <img class="logo" src="https://static-assets.boise.vacasa.com/logo/vacasa-logo-vertical-light.png" width="89px" height="64px" alt="Vacasa">
             </a>
           </columns>

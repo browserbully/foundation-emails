@@ -79,29 +79,6 @@
                     "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
                 }
             },
-            "unit_four": {
-                "bath": 1,
-                "bed": 0,
-                "description": "Watch magnificent sunsets a hundred feet above the Pacific Ocean at this beautifully positioned motel retreat on the Central Oregon Coast! This Lincoln City escape is part of the Seahorse Motel, featuring a private balcony, ocean views right from the room, and a fireplace to keep you cozy on cool coastal evenings. Soak in the shared outdoor hot tub overlooking the ocean, take a swim in the indoor...",
-                "id": "25528",
-                "name": "Seahorse Motel #231",
-                "percent": 32,
-                "price": 197,
-                "previous_price": 289,
-                "rating_average_score": null,
-                "rating_count": null,
-                "sleeps": 2,
-                "url_image": "vacasa-units.imgix.net/1599374.jpg",
-                "url_unit": "https://www.vacasa.com/unit.php?UnitID=25528&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
-                "UTMs": {
-                    "utm_campaign": "weekend_deal_2019-07-08",
-                    "utm_campaignid": 1,
-                    "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
-                    "utm_source": "sendgrid_peat",
-                    "utm_medium": "email",
-                    "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
-                }
-            },
             "url": "https://www.vacasa.com/usa/oregon/lincoln-city/?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
             "UTMs": {
                 "utm_campaign": "weekend_deal_2019-07-08",

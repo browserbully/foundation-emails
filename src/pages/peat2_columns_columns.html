@@ -77,9 +77,9 @@ subject: Your vacation is our full-time job
     {{/each}} {{!-- unit_one_two --}}
   </row>
 
-  {{#if this.unit_three}}
+  {{#if this.unit_four}}
   <row class="listing">
-    <columns {{#if this.unit_four}}large="6"{{/if}}>
+    <columns large="6">
       {{#with this.unit_three}}
       <button target="_blank" href="{{url_unit}}&utm_content=position-1_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
       <a target="_blank" href="{{url_unit}}&utm_content=position-1_image">
@@ -96,7 +96,6 @@ subject: Your vacation is our full-time job
       {{/with}} {{!-- unit_three --}}
     </columns>
 
-    {{#if this.unit_four}}
     <columns large="6">
       {{#with this.unit_four}}
       <button target="_blank" href="{{url_unit}}&utm_content=position-1_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
@@ -113,10 +112,28 @@ subject: Your vacation is our full-time job
       </a>
       {{/with}} {{!-- unit_four --}}
     </columns>
-    {{/if}} {{!-- unit_four --}}
 
   </row>
-  {{/if}} {{!-- unit_three --}}
+  {{else}}
+  {{#with this.unit_three}}
+  <row class="listing">
+    <columns>
+      <button target="_blank" href="{{url_unit}}&utm_content=position-1_percentage" class="tiny rounded">Save {{percent}}&#37;</button>
+      <a target="_blank" href="{{url_unit}}&utm_content=position-1_image">
+        <img class="unit" src="https://{{url_image}}?q=40&w={{#if ../unit_four}}267{{else}}591{{/if}}&h={{#if ../unit_four}}201{{else}}313{{/if}}&fit=crop"  alt="">
+      </a>
+      <a href="{{url_unit}}&utm_content=position-1_filters">
+        <span class="attributes">{{bed}} Bed | {{bath}} Bath | Sleeps {{sleeps}}</span>
+      </a>
+      <div class="rating"><a target="_blank" href="{{url_unit}}&utm_content=position-1_reviews">{{#if rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_{{rating_average_score}}.png" alt="{{rating_average_score}} Stars">{{/if}}{{#if rating_count}}<span class="reviews">{{rating_count}} Reviews</span>{{/if}}</a>
+      </div>
+      <a target="_blank" href="{{url_unit}}&utm_content=position-1_price">
+        <p><span class="current-price">${{price}}</span>&nbsp;&nbsp;<span class="previous-price">${{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+    </columns>
+  </row>
+  {{/with}} {{!-- unit_three --}}
+  {{/if}} {{!-- unit_four --}}
 
   <row>
     <columns>

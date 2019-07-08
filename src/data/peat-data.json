@@ -1,141 +1,238 @@
 {
-  "percent_max": 25,
-  "previous_unit_image": "vacasa-units.imgix.net/1444814.jpg",
-  "prev_res_city": "City Name",
-  "prev_res_state": "State Name",
-  "prev_res_year": "0000",
-  "city": [
-    {
-      "name": "McCall",
-      "name_url": "McCall",
-      "state": "Idaho",
-      "state_abbreviated": "ID",
-      "dates_long_format": "November 21–25, 2019",
-      "dates_short_format": "11/21–25",
-      "unit_listing": [
+    "percent_max": 50,
+    "city": [
         {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+            "name": "Lincoln City",
+            "name_url": "Lincoln-City",
+            "state": "Oregon",
+            "state_abbreviated": " OR",
+            "dates_long_format": "July 12-13, 2019",
+            "dates_short_format": "7/12-13",
+            "unit_one_two": [
+                {
+                    "bath": 1,
+                    "bed": 0,
+                    "description": "Make this lovely room at the Seahorse Motel your next home base to explore and enjoy everything the Oregon Coast has to offer! The property stands one hundred feet above the ocean with miles of the mighty Pacific offering up her latest show just for you. Come enjoy the spectacular panoramic views of the breathtaking Oregon Coast, coupled with warm hospitality will give you memories to last a...",
+                    "id": "25477",
+                    "name": "Seahorse Motel #123",
+                    "percent": 32,
+                    "price": 190,
+                    "previous_price": 279,
+                    "rating_average_score": null,
+                    "rating_count": null,
+                    "sleeps": 4,
+                    "url_image": "vacasa-units.imgix.net/1581568.jpg",
+                    "url_unit": "https://www.vacasa.com/unit.php?UnitID=25477&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                    "UTMs": {
+                        "utm_campaign": "weekend_deal_2019-07-08",
+                        "utm_campaignid": 1,
+                        "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                        "utm_source": "sendgrid_peat",
+                        "utm_medium": "email",
+                        "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                    }
+                },
+                {
+                    "bath": 1,
+                    "bed": 0,
+                    "description": "Make your dream of a coastal getaway come true in this room at the Seahorse Motel! This property stands one hundred feet above the ocean with miles of the mighty Pacific offering up her latest show just for you. Come enjoy the spectacular panoramic views of the breathtaking Oregon Coast, coupled with warm hospitality will give you memories to last a lifetime. During your stay, you will enjoy the...",
+                    "id": "25473",
+                    "name": "Seahorse Motel #114",
+                    "percent": 32,
+                    "price": 190,
+                    "previous_price": 279,
+                    "rating_average_score": "3",
+                    "rating_count": 1,
+                    "sleeps": 4,
+                    "url_image": "vacasa-units.imgix.net/1594990.jpg",
+                    "url_unit": "https://www.vacasa.com/unit.php?UnitID=25473&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                    "UTMs": {
+                        "utm_campaign": "weekend_deal_2019-07-08",
+                        "utm_campaignid": 1,
+                        "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                        "utm_source": "sendgrid_peat",
+                        "utm_medium": "email",
+                        "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                    }
+                }
+            ],
+            "unit_three": {
+                "bath": 1,
+                "bed": 1,
+                "description": "Find a cozy home base for exploring the Central Oregon Coast in this cabin at the Seahorse Motel, where the warm hospitality will give you memories to last a lifetime. This dog-friendly home offers one bedroom with a queen-size bed, one bathroom with a shower, and a hide-a-bed in the living room. During your stay, you'll be treated to shared amenities that include an outdoor hot tub overlooking...",
+                "id": "25538",
+                "name": "Seahorse Cabin #108",
+                "percent": 31,
+                "price": 169,
+                "previous_price": 244,
+                "rating_average_score": null,
+                "rating_count": null,
+                "sleeps": 4,
+                "url_image": "vacasa-units.imgix.net/1585799.jpg",
+                "url_unit": "https://www.vacasa.com/unit.php?UnitID=25538&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                "UTMs": {
+                    "utm_campaign": "weekend_deal_2019-07-08",
+                    "utm_campaignid": 1,
+                    "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                    "utm_source": "sendgrid_peat",
+                    "utm_medium": "email",
+                    "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                }
+            },
+            "unit_four": {
+                "bath": 1,
+                "bed": 0,
+                "description": "Watch magnificent sunsets a hundred feet above the Pacific Ocean at this beautifully positioned motel retreat on the Central Oregon Coast! This Lincoln City escape is part of the Seahorse Motel, featuring a private balcony, ocean views right from the room, and a fireplace to keep you cozy on cool coastal evenings. Soak in the shared outdoor hot tub overlooking the ocean, take a swim in the indoor...",
+                "id": "25528",
+                "name": "Seahorse Motel #231",
+                "percent": 32,
+                "price": 197,
+                "previous_price": 289,
+                "rating_average_score": null,
+                "rating_count": null,
+                "sleeps": 2,
+                "url_image": "vacasa-units.imgix.net/1599374.jpg",
+                "url_unit": "https://www.vacasa.com/unit.php?UnitID=25528&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                "UTMs": {
+                    "utm_campaign": "weekend_deal_2019-07-08",
+                    "utm_campaignid": 1,
+                    "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                    "utm_source": "sendgrid_peat",
+                    "utm_medium": "email",
+                    "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                }
+            },
+            "url": "https://www.vacasa.com/usa/oregon/lincoln-city/?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+            "UTMs": {
+                "utm_campaign": "weekend_deal_2019-07-08",
+                "utm_campaignid": 1,
+                "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                "utm_source": "sendgrid_peat",
+                "utm_medium": "email",
+                "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+            }
         },
         {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
-        },
-        {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
-        },
-        {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+            "name": "Harrison",
+            "name_url": "Harrison",
+            "state": "Idaho",
+            "state_abbreviated": " ID",
+            "dates_long_format": "July 12-13, 2019",
+            "dates_short_format": "7/12-13",
+            "unit_one_two": [
+                {
+                    "bath": 2,
+                    "bed": 2,
+                    "description": "Find elegant decor and an incredible lakefront position at this condo on the shores of Lake Coeur d'Alene! This condo stands apart from the rest, offering gorgeous lake views, a screened patio with an electric grill, and a beautiful interior highlighted by a remodeled kitchen, pristine furnishings, and a gas fireplace. Come back year after year for a relaxing retreat on the lake and take in the...",
+                    "id": "23702",
+                    "name": "Eaglewatch at Coeur d'Alene",
+                    "percent": 25,
+                    "price": 226,
+                    "previous_price": 301,
+                    "rating_average_score": "4-5",
+                    "rating_count": 2,
+                    "sleeps": 4,
+                    "url_image": "vacasa-units.imgix.net/1457678.jpg",
+                    "url_unit": "https://www.vacasa.com/unit.php?UnitID=23702&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                    "UTMs": {
+                        "utm_campaign": "weekend_deal_2019-07-08",
+                        "utm_campaignid": 1,
+                        "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                        "utm_source": "sendgrid_peat",
+                        "utm_medium": "email",
+                        "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                    }
+                },
+                {
+                    "bath": 1,
+                    "bed": 3,
+                    "description": "Get away from it all at this spacious, three-bedroom, lakefront cabin located just 15 miles east of the Idaho-Washington state line. Enjoy sunny living spaces, a full kitchen, a furnished deck, and your very own stretch of private beach.\r\n\r\nWhat's nearby:\r\nWalk down to the water's edge and then set out in your kayak or canoe for a day of fishing on the bay. Head down the coast and explore Heyburn...",
+                    "id": "17273",
+                    "name": "Cleland Bay Hideaway",
+                    "percent": 19,
+                    "price": 237,
+                    "previous_price": 292,
+                    "rating_average_score": "5",
+                    "rating_count": 5,
+                    "sleeps": 6,
+                    "url_image": "vacasa-units.imgix.net/1039556.jpg",
+                    "url_unit": "https://www.vacasa.com/unit.php?UnitID=17273&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                    "UTMs": {
+                        "utm_campaign": "weekend_deal_2019-07-08",
+                        "utm_campaignid": 1,
+                        "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                        "utm_source": "sendgrid_peat",
+                        "utm_medium": "email",
+                        "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                    }
+                }
+            ],
+            "unit_three": {
+                "bath": 1,
+                "bed": 2,
+                "description": "Built in 1940, this authentic log cabin in historic Harrison is just two blocks from the shores of Lake Coeur d'Alene. The beautiful park-like setting and partial lake views are sure to make you forget the worries of the world. Enjoy the quiet relaxation of this historic cabin equipped with all the necessary modern amenities including memory foam mattresses, a fully equipped kitchen, and private...",
+                "id": "17078",
+                "name": "Lincoln Log Cabin",
+                "percent": 31,
+                "price": 233,
+                "previous_price": 337,
+                "rating_average_score": "5",
+                "rating_count": 11,
+                "sleeps": 6,
+                "url_image": "vacasa-units.imgix.net/1014492.jpg",
+                "url_unit": "https://www.vacasa.com/unit.php?UnitID=17078&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                "UTMs": {
+                    "utm_campaign": "weekend_deal_2019-07-08",
+                    "utm_campaignid": 1,
+                    "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                    "utm_source": "sendgrid_peat",
+                    "utm_medium": "email",
+                    "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                }
+            },
+            "unit_four": {
+                "bath": 2,
+                "bed": 3,
+                "description": "This clean, bright, and recently remodeled home is situated across the street from Lake Coeur d'Alene and within walking distance of the center of Harrison. Enjoy the stunning views of the lake from the large wraparound sun porch, master suite, or from the comfort of the living room. The kitchen and dining room are open with a warm and cozy atmosphere.\r\n\r\n\r\nWhat's nearby:\r\nThere is so much to do...",
+                "id": "22480",
+                "name": "Morning Ridge On Lake Coeur d'Alene",
+                "percent": 23,
+                "price": 342,
+                "previous_price": 444,
+                "rating_average_score": null,
+                "rating_count": null,
+                "sleeps": 8,
+                "url_image": "vacasa-units.imgix.net/1413094.jpg",
+                "url_unit": "https://www.vacasa.com/unit.php?UnitID=22480&utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+                "UTMs": {
+                    "utm_campaign": "weekend_deal_2019-07-08",
+                    "utm_campaignid": 1,
+                    "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                    "utm_source": "sendgrid_peat",
+                    "utm_medium": "email",
+                    "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+                }
+            },
+            "url": "https://www.vacasa.com/usa/idaho/harrison/?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email",
+            "UTMs": {
+                "utm_campaign": "weekend_deal_2019-07-08",
+                "utm_campaignid": 1,
+                "utm_uuid": "b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7",
+                "utm_source": "sendgrid_peat",
+                "utm_medium": "email",
+                "query_string": "?utm_campaign=weekend_deal_2019-07-08&utm_campaignid=1&utm_uuid=b7e76c60-a1ca-11e9-a774-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
+            }
         }
-      ]
+    ],
+    "previous_reservation": {
+        "year": 2019,
+        "unit_id": 12281,
+        "city": null,
+        "state": null,
+        "image": null
     },
-    {
-      "name": "Sun Valley",
-      "name_url": "Sun-Valley",
-      "state": "Idaho",
-      "state_abbreviated": "ID",
-      "dates_long_format": "November 21–25, 2019",
-      "dates_short_format": "11/21–25",
-      "unit_listing": [
-        {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
-        },
-        {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
-        },
-        {
-          "bath": 24,
-          "bed": 12,
-          "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "id": 1680,
-          "name": "Crystal Castal",
-          "percent": 9,
-          "price": 1220,
-          "previous_price": "2400",
-          "rating_average_score": 1,
-          "rating_count": 13,
-          "sleeps": 100,
-          "url_image": "vacasa-units.imgix.net/1444815.jpg",
-          "url_unit": "https://www.vacasa.com/unit.php?UnitID=19972&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email"
-        }
-      ]
-    }
-  ],
-  "previous_reservation": {
-    "year": null,
-    "unit_id": null,
-    "city": null,
-    "state": null,
-    "image": null
-  }
+    "previous_unit_image": null,
+    "prev_res_city": null,
+    "prev_res_state": null,
+    "prev_res_year": 2019
 }

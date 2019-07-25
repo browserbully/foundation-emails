@@ -6,7 +6,7 @@ subject: Your vacation is our full-time job
   <container>
     <spacer size="26"></spacer>
     <row class="">
-      <columns large="12" small="6">
+      <columns large="12" small="8">
         <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_logo" >
           <img width="246" height="48" src="https://static-assets.boise.vacasa.com/peat/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
         </a>
@@ -16,12 +16,11 @@ subject: Your vacation is our full-time job
     <row>
       <columns>
         <span><h1 class="headline">Your vacation is our full-time job</h1></span>
-        \{{#if peat-data.percent_max\}}
-        <p class="lead"><span>Save up to \{{peat-data.percent_max\}}&#37;</span> by booking at the last minute. Browse our best deals for this upcoming weekend near you.</p>
-        \{{/if\}} \{{!-- peat-data.percent_max --\}}
+        <p class="lead"><span>Booking at the last minute</span> can save you a bundle. Check out some of our best deals near you this weekend.</p>
+        <button target="_blank" href="\{{url_unit}}&utm_content=header_cta" class="primary">Search Vacation Rentals</button>
       </columns>
     </row>
-    <spacer size="16"></spacer>
+    <spacer size="72"></spacer>
     <row>
       <columns>
         <center>
@@ -36,158 +35,148 @@ subject: Your vacation is our full-time job
 
 <container>
 
-  \{{#if peat-data.city\}}
-  \{{#each peat-data.city\}}
-  <spacer size="40"></spacer>
+  \{{#if peat-data.city}}
+  \{{#each peat-data.city}}
+  <spacer size="72"></spacer>
 
   <row class="">
     <columns>
-      <h2 class="section-title">\{{#if name\}}\{{name\}}\{{/if\}}\{{#if state_abbreviated\}}, \{{state_abbreviated\}}\{{/if\}}</h2>
+      <h2 class="section-title">\{{#if name}}\{{name}}\{{/if}}\{{#if state_abbreviated}}, \{{state_abbreviated}}\{{/if}} Vacation Rentals</h2>
     </columns>
   </row>
 
-  \{{#if dates_long_format\}}
+  \{{#if dates_long_format}}
   <row>
       <columns>
         <img class="icon float-left" width="14" height="16" src="https://static-assets.boise.vacasa.com/peat/Icons_ Feather_caret-down.png" />
-        <p>&nbsp;&nbsp;\{{dates_long_format\}}</p>
+        <p>&nbsp;&nbsp;\{{dates_long_format}}</p>
       </columns>
   </row>
-  \{{/if\}} \{{!-- dates --\}}
+  \{{/if}} \{{!-- dates --}}
 
-  \{{#if unit_listing\}}
   <spacer size="8"></spacer>
 
-  \{{#if unit_listing.[0]\}}
+  \{{#if unit_one_two}}
   <row class="listing">
 
-    \{{#with unit_listing.[0]\}}
+    \{{#each unit_one_two}}
     <columns large="6">
-      <button target="_blank" href="\{{url_unit\}}&utm_content=position-1_percentage" class="tiny rounded">Save \{{percent\}}&#37;</button>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-1_image">
-        <img class="unit" src="https://\{{url_image\}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="\{{url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{percent}}&#37;</button>
+      <a target="_blank" href="\{{url_unit}}&utm_content=unit-card_image">
+        <img class="unit" src="https://\{{url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="\{{url_unit\}}&utm_content=position-1_filters">
-        <span class="attributes">\{{bed\}} Bed | \{{bath\}} Bath | Sleeps \{{sleeps\}}</span>
+      <a href="\{{url_unit}}&utm_content=unit-card_filters">
+        <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="\{{url_unit\}}&utm_content=position-1_reviews">\{{#if rating_average_score\}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score\}}.png" alt="\{{rating_average_score\}} Stars">\{{/if\}}\{{#if rating_count\}}<span class="reviews">\{{rating_count\}} Reviews</span>\{{/if\}}</a>
+      <div class="rating"><a target="_blank" href="\{{url_unit}}&utm_content=unit-card_reviews">\{{#if rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score}}.png" alt="\{{rating_average_score}} Stars">\{{/if}}\{{#if rating_count}}<span class="reviews">\{{rating_count}} Reviews</span>\{{/if}}</a>
       </div>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-1_price">
-        <p><span class="current-price">$\{{price\}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price\}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      <a target="_blank" href="\{{url_unit}}&utm_content=unit-card_price">
+        <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
+      <!-- <button target="_blank" href="\{{url_unit}}&utm_content=unit-card_cta" class="secondary">Book</button> -->
     </columns>
-    \{{/with\}} \{{!-- unit_listing[0] --\}}
-
-    \{{#if unit_listing.[1]\}}
-    \{{#with unit_listing.[1]\}}
-    <columns large="6">
-      <button target="_blank" href="\{{url_unit\}}&utm_content=position-2_percentage" class="tiny rounded">Save \{{percent\}}&#37;</button>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-2_image">
-        <img class="unit" src="https://\{{url_image\}}?q=45&w=591&h=394&fit=crop"  alt="">
-      </a>
-      <a href="\{{url_unit\}}&utm_content=position-2_filters">
-        <span class="attributes">\{{bed\}} Bed | \{{bath\}} Bath | Sleeps \{{sleeps\}}</span>
-      </a>
-      <div class="rating"><a target="_blank" href="\{{url_unit\}}&utm_content=position-2_reviews">\{{#if rating_average_score\}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score\}}.png" alt="\{{rating_average_score\}} Stars">\{{/if\}}\{{#if rating_count\}}<span class="reviews">\{{rating_count\}} Reviews</span>\{{/if\}}</a>
-      </div>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-2_price">
-        <p><span class="current-price">$\{{price\}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price\}}</span>&nbsp;<span class="per-night">avg/night</span></p>
-      </a>
-    </columns>
-    \{{/with\}} \{{!-- unit_listing[1] --\}}
-    \{{/if\}} \{{!-- unit_listing[1] --\}}
+    \{{/each}} \{{!-- unit_one_two --}}
 
   </row>
-  \{{/if\}} \{{!-- unit_listing[0] --\}}
 
-  \{{#if unit_listing.[2]\}}
+  \{{#if unit_three}}
+  \{{#if unit_four}}
   <row class="listing">
 
-    \{{#with unit_listing.[2]\}}
     <columns large="6">
-      <button target="_blank" href="\{{url_unit\}}&utm_content=position-3_percentage" class="tiny rounded">Save \{{percent\}}&#37;</button>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-3_image">
-        <img class="unit" src="https://\{{url_image\}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{unit_three.percent}}&#37;</button>
+      <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_image">
+        <img class="unit" src="https://\{{unit_three.url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="\{{url_unit\}}&utm_content=position-3_filters">
-        <span class="attributes">\{{bed\}} Bed | \{{bath\}} Bath | Sleeps \{{sleeps\}}</span>
+      <a href="\{{unit_three.url_unit}}&utm_content=unit-card_filters">
+        <span class="attributes">\{{unit_three.bed}} Bed | \{{unit_three.bath}} Bath | Sleeps \{{unit_three.sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="\{{url_unit\}}&utm_content=position-3_reviews">\{{#if rating_average_score\}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score\}}.png" alt="\{{rating_average_score\}} Stars">\{{/if\}}\{{#if rating_count\}}<span class="reviews">\{{rating_count\}} Reviews</span>\{{/if\}}</a>
+      <div class="rating"><a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_reviews">\{{#if unit_three.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_three.rating_average_score}}.png" alt="\{{unit_three.rating_average_score}} Stars">\{{/if}}\{{#if unit_three.rating_count}}<span class="reviews">\{{unit_three.rating_count}} Reviews</span>\{{/if}}</a>
       </div>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-3_price">
-        <p><span class="current-price">$\{{price\}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price\}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_price">
+        <p><span class="current-price">$\{{unit_three.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_three.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
+      <!-- <button target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_cta" class="secondary">Book</button> -->
     </columns>
-    \{{/with\}} \{{!-- unit_listing[2] --\}}
 
-    \{{#if unit_listing.[3]\}}
-    \{{#with unit_listing.[3]\}}
     <columns large="6">
-      <button target="_blank" href="\{{url_unit\}}&utm_content=position-4_percentage" class="tiny rounded">Save \{{percent\}}&#37;</button>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-4_image">
-        <img class="unit" src="https://\{{url_image\}}?q=45&w=591&h=394&fit=crop"  alt="">
+      <button target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{unit_four.percent}}&#37;</button>
+      <a target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_image">
+        <img class="unit" src="https://\{{unit_four.url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
       </a>
-      <a href="\{{url_unit\}}&utm_content=position-4_filters">
-        <span class="attributes">\{{bed\}} Bed | \{{bath\}} Bath | Sleeps \{{sleeps\}}</span>
+      <a href="\{{unit_four.url_unit}}&utm_content=unit-card_filters">
+        <span class="attributes">\{{unit_four.bed}} Bed | \{{unit_four.bath}} Bath | Sleeps \{{unit_four.sleeps}}</span>
       </a>
-      <div class="rating"><a target="_blank" href="\{{url_unit\}}&utm_content=position-4_reviews">\{{#if rating_average_score\}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score\}}.png" alt="\{{rating_average_score\}} Stars">\{{/if\}}\{{#if rating_count\}}<span class="reviews">\{{rating_count\}} Reviews</span>\{{/if\}}</a>
+      <div class="rating"><a target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_reviews">\{{#if unit_four.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_four.rating_average_score}}.png" alt="\{{unit_four.rating_average_score}} Stars">\{{/if}}\{{#if unit_four.rating_count}}<span class="reviews">\{{unit_four.rating_count}} Reviews</span>\{{/if}}</a>
       </div>
-      <a target="_blank" href="\{{url_unit\}}&utm_content=position-4_price">
-        <p><span class="current-price">$\{{price\}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price\}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      <a target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_price">
+        <p><span class="current-price">$\{{unit_four.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_four.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
       </a>
+      <!-- <button target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_cta" class="secondary">Book</button> -->
     </columns>
-    \{{/with\}} \{{!-- unit_listing[3] --\}}
-    \{{/if\}} \{{!-- unit_listing[3] --\}}
 
   </row>
-  \{{/if\}} \{{!-- unit_listing[2] --\}}
+  \{{else}}
+  <row class="listing">
+
+    <columns>
+      <button target="_blank" href="\{{url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{unit_three.percent}}&#37;</button>
+      <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_image">
+        <img class="unit" src="https://\{{unit_three.url_image}}?q=45&w=591&h=394&fit=crop"  alt="">
+      </a>
+      <a href="\{{unit_three.url_unit}}&utm_content=unit-card_filters">
+        <span class="attributes">\{{unit_three.bed}} Bed | \{{unit_three.bath}} Bath | Sleeps \{{unit_three.sleeps}}</span>
+      </a>
+      <div class="rating"><a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_reviews">\{{#if unit_three.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_three.rating_average_score}}.png" alt="\{{unit_three.rating_average_score}} Stars">\{{/if}}\{{#if unit_three.rating_count}}<span class="reviews">\{{unit_three.rating_count}} Reviews</span>\{{/if}}</a>
+      </div>
+      <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_price">
+        <p><span class="current-price">$\{{unit_three.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_three.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
+      </a>
+      <!-- <button target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_cta" class="secondary">Book</button> -->
+    </columns>
+  </row>
+  \{{/if}} \{{!-- unit_four --}}
+  \{{/if}} \{{!-- unit_three --}}
 
   <row>
     <columns>
-      <button href="https://www.vacasa.com/usa/\{{state\}}/\{{name_url\}}?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=\{{name\}}_search" target="_blank" class="large secondary radius expanded">View All Homes in \{{name\}}, \{{state_abbreviated\}} (\{{dates_short_format\}})</button>
+      <button href="https://www.vacasa.com/usa/\{{state}}/\{{name_url}}?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=\{{name}}_search" target="_blank" class="large secondary radius expanded">Browse \{{name}} Homes</button>
     </columns>
   </row>
-  \{{/if\}} \{{!-- unit_listing --\}}
+  \{{/if}} \{{!-- unit_one_two --}}
 
-  \{{/each\}} \{{!-- peat-data.city --\}}
-  \{{/if\}} \{{!-- peat-data.city --\}}
-
-  <spacer size="72"></spacer>
+  \{{/each}} \{{!-- peat-data.city --}}
+  \{{/if}} \{{!-- peat-data.city --}}
 
 </container>
+
+<spacer size="72"></spacer>
 
 <wrapper class="header dark">
   <container>
     <spacer size="26"></spacer>
     <row>
-      <columns>
+      <columns class="search-bar">
         <h2 class="headline">Find a vacation rental</h2>
         <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=footer_search" target="_blank" >
-          <img src="https://static-assets.boise.vacasa.com/peat/search-bar.png" />
+          <img src="https://static-assets.boise.vacasa.com/peat/search-bar.png" alt="Where would you like to go?" />
         </a>
       </columns>
     </row>
 
-    \{{#if peat-data.previous_reservation\}}
-    \{{#with peat-data.previous_reservation\}}
+    \{{#if peat-data.previous_reservation}}
     <spacer size="32"></spacer>
 
     <row>
       <columns>
-          <row class="collapse">
-            \{{#if image\}}
-            <columns large="3">
-              <img class="past-unit" src="\{{image\}}?q=45&w=95&h=64&fit=crop" alt="">
-            </columns>
-            \{{/if\}} \{{!-- image --\}}
-            <columns large="9">
-              <p>You’ve received this email because you previously stayed with us\{{#if city\}} in \{{city\}}\{{/if\}}\{{#if state\}}, \{{state\}}\{{/if\}}\{{#if year\}} in \{{year\}}\{{/if\}}.</p>
+          <row>
+            <columns>
+              <p>You’ve received this email because you previously stayed with us\{{#if peat-data.previous_reservation.city}} in \{{peat-data.previous_reservation.city}}\{{/if}}\{{#if peat-data.previous_reservation.state}}, \{{peat-data.previous_reservation.state}}\{{/if}}\{{#if peat-data.previous_reservation.year}} in \{{peat-data.previous_reservation.year}}\{{/if}}.</p>
             </columns>
           </row>
       </columns>
     </row>
-    \{{/with\}} \{{!-- peat-data.previous_reservation --\}}
-    \{{/if\}} \{{!-- peat-data.previous_reservation --\}}
+    \{{/if}} \{{!-- peat-data.previous_reservation --}}
 
     <spacer size="32"></spacer>
 
@@ -220,9 +209,15 @@ subject: Your vacation is our full-time job
   <spacer size="36"></spacer>
   <row class="legal">
     <columns>
-      <p class="small">The discount is based on the highest price of the offer under the same conditions from the same dates for the upcoming year.</p>
-      <p class="small">Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. <a href="https://www.vacasa.com/real-estate/real-estate-entities">Click here</a> for more information about Vacasa's licensed real estate brokerage/property manager in your state. Vacasa’s licensed real estate brokerages/property managers include: Vacasa Alabama LLC; Vacasa Arizona LLC; Vacasa Florida LLC; Vacasa Louisiana L.L.C. (licensed in Louisiana); Vacasa Michigan LLC 947-800-5979; Vacasa Nevada LLC; Vacasa New Hampshire LLC, 603-782-9591, Michael Scanlan, Principal Broker, 314 Lafayette Road, Suite 1A, Hampton, NH 03842; Vacasa New Mexico LLC, 503-345-9399; Vacasa New York LLC, 888-433-0068; Vacasa North Carolina LLC; Vacasa Pennsylvania LLC; Vacasa Real Estate LLC (licensed in Colorado 720-727-9358, Idaho, and Oregon); Vacasa Resort Rentals of Hilton Head Island LLC; Vacasa South Carolina LLC; Vacasa Tennessee LLC; Vacasa Vacation Rentals of Hawaii LLC, 3350 Lower Honoapiilani Road, Suite 600, Lahaina, HI 96761; Vacasa Vacation Rentals of Montana LLC, Rickie Miller, Licensed Property Manager; Vacasa Virginia LLC; Vacasa Wisconsin LLC.</p>
+      <p class="small">The discount is based on the highest price of the offer under the same conditions from the same dates for the upcoming year. Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. <a href="https://www.vacasa.com/real-estate/real-estate-entities">Click here</a> for more information about Vacasa's licensed real estate brokerage/property manager in your state.</p>
+    </columns>
+  </row>
+
+  <row class="legal">
+    <columns large=8>
       <p class="copyright">&copy; 2019 Vacasa, LLC | 850 NW 13th Ave. Portland, OR 97209</p>
+    </columns>
+    <columns large=4>
       <p class="links"><a href="<%asm_group_unsubscribe_raw_url%>">Unsubscribe</a>&nbsp;&nbsp;<span class="separator">|</span>&nbsp;&nbsp;<a href="https://www.vacasa.com/terms-of-service">Privacy &amp; Terms</a></p>
     </columns>
   </row>

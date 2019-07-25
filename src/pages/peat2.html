@@ -149,15 +149,17 @@ subject: Your vacation is our full-time job
   {{/if}} {{!-- peat-data.city --}}
 
 </container>
+
 <spacer size="72"></spacer>
+
 <wrapper class="header dark">
   <container>
     <spacer size="26"></spacer>
     <row>
-      <columns>
+      <columns class="search-bar">
         <h2 class="headline">Find a vacation rental</h2>
         <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=footer_search" target="_blank" >
-          <img src="https://static-assets.boise.vacasa.com/peat/search-bar.png" />
+          <img src="https://static-assets.boise.vacasa.com/peat/search-bar.png" alt="Where would you like to go?" />
         </a>
       </columns>
     </row>
@@ -167,7 +169,7 @@ subject: Your vacation is our full-time job
 
     <row>
       <columns>
-          <row class="collapse">
+          <row>
             <columns>
               <p>You’ve received this email because you previously stayed with us{{#if peat-data.previous_reservation.city}} in {{peat-data.previous_reservation.city}}{{/if}}{{#if peat-data.previous_reservation.state}}, {{peat-data.previous_reservation.state}}{{/if}}{{#if peat-data.previous_reservation.year}} in {{peat-data.previous_reservation.year}}{{/if}}.</p>
             </columns>
@@ -207,9 +209,15 @@ subject: Your vacation is our full-time job
   <spacer size="36"></spacer>
   <row class="legal">
     <columns>
-      <p class="small">The discount is based on the highest price of the offer under the same conditions from the same dates for the upcoming year.</p>
-      <p class="small">Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. <a href="https://www.vacasa.com/real-estate/real-estate-entities">Click here</a> for more information about Vacasa's licensed real estate brokerage/property manager in your state. Vacasa’s licensed real estate brokerages/property managers include: Vacasa Alabama LLC; Vacasa Arizona LLC; Vacasa Florida LLC; Vacasa Louisiana L.L.C. (licensed in Louisiana); Vacasa Michigan LLC 947-800-5979; Vacasa Nevada LLC; Vacasa New Hampshire LLC, 603-782-9591, Michael Scanlan, Principal Broker, 314 Lafayette Road, Suite 1A, Hampton, NH 03842; Vacasa New Mexico LLC, 503-345-9399; Vacasa New York LLC, 888-433-0068; Vacasa North Carolina LLC; Vacasa Pennsylvania LLC; Vacasa Real Estate LLC (licensed in Colorado 720-727-9358, Idaho, and Oregon); Vacasa Resort Rentals of Hilton Head Island LLC; Vacasa South Carolina LLC; Vacasa Tennessee LLC; Vacasa Vacation Rentals of Hawaii LLC, 3350 Lower Honoapiilani Road, Suite 600, Lahaina, HI 96761; Vacasa Vacation Rentals of Montana LLC, Rickie Miller, Licensed Property Manager; Vacasa Virginia LLC; Vacasa Wisconsin LLC.</p>
+      <p class="small">The discount is based on the highest price of the offer under the same conditions from the same dates for the upcoming year. Vacasa offers property management and other real estate services directly through Vacasa LLC and through Vacasa LLC's licensed subsidiaries. <a href="https://www.vacasa.com/real-estate/real-estate-entities">Click here</a> for more information about Vacasa's licensed real estate brokerage/property manager in your state.</p>
+    </columns>
+  </row>
+
+  <row class="legal">
+    <columns large=8>
       <p class="copyright">&copy; 2019 Vacasa, LLC | 850 NW 13th Ave. Portland, OR 97209</p>
+    </columns>
+    <columns large=4>
       <p class="links"><a href="<%asm_group_unsubscribe_raw_url%>">Unsubscribe</a>&nbsp;&nbsp;<span class="separator">|</span>&nbsp;&nbsp;<a href="https://www.vacasa.com/terms-of-service">Privacy &amp; Terms</a></p>
     </columns>
   </row>

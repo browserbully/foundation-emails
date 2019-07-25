@@ -4,9 +4,13 @@ h1 span {
 .header {
   background-color: $white;
   img.logo {
-    margin-left: 40px;
+    // margin-left: 40px;
   }
   &.dark {
+    .columns {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
     background-color: $midnight;
     color: $white;
     h1.headline {

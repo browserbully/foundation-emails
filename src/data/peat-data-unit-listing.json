@@ -1,0 +1,238 @@
+{
+  "percent_max": 50,
+  "city": [
+    {
+      "name": "Rockaway Beach",
+      "name_url": "Rockaway-Beach",
+      "state": "Oregon",
+      "state_abbreviated": " OR",
+      "dates_long_format": "July 26-27, 2019",
+      "dates_short_format": "7/26-27",
+      "unit_listing": [
+        {
+          "bath": 2,
+          "bed": 2,
+          "description": "Please note that the elevators are out of service, indefinitely, and the balcony door to this unit is currently not operational making the balcony not accessible at this time.\r\n\r\nBe inspired by the expansive views of the Pacific Ocean at this dog-friendly Rockaway Beach condo. This retreat offers an unbeatable oceanfront location, well-equipped kitchen, radiant floor heating, and floor-to-ceiling...",
+          "id": "512",
+          "name": "Romantic Manhattan Beach Sunset #202",
+          "percent": 24,
+          "price": 360,
+          "previous_price": 473,
+          "rating_average_score": "4-5",
+          "rating_count": 154,
+          "sleeps": 6,
+          "url_image": "vacasa-units.imgix.net/391085.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=512&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        },
+        {
+          "bath": 2,
+          "bed": 2,
+          "description": "Get away to the coast for a pleasant vacation at this charming, modern home in Rockaway Beach. With comfortable living quarters, an assortment of entertainment, and nearby access to the sandy beach, up to five guests will enjoy time here!\r\n\r\nLocated at the quieter south end of town, the picturesque Twin Rocks are easily visible from the beach while the restaurants and shops of downtown are a...",
+          "id": "5953",
+          "name": "Elli's Haus",
+          "percent": 26,
+          "price": 176,
+          "previous_price": 237,
+          "rating_average_score": "5",
+          "rating_count": 38,
+          "sleeps": 5,
+          "url_image": "vacasa-units.imgix.net/975883.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=5953&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        },
+        {
+          "bath": 1,
+          "bed": 2,
+          "description": "Explore all of Rockaway Beach, including the town's wide, sandy shores and quaint downtown area along Highway 101, from this dog-friendly home with room for up to six guests. \r\n\r\nThis home resides in a quiet neighborhood on the northeast side of town and is only a half-mile walk from beach and souvenir shops, eclectic eateries, and attractions like the Oregon Coast Scenic Railroad. \r\n\r\nStep...",
+          "id": "7875",
+          "name": "Cedar Creek Retreat",
+          "percent": 24,
+          "price": 220,
+          "previous_price": 289,
+          "rating_average_score": "4-5",
+          "rating_count": 37,
+          "sleeps": 6,
+          "url_image": "vacasa-units.imgix.net/813741.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=7875&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        },
+        {
+          "bath": 3,
+          "bed": 3,
+          "description": "Are you looking for luxury? Find it at Rockaway Beach when you stay in this beautiful oceanside rental, featuring gorgeous views, and more!  \r\n\r\nThis five-star rental is located on the north Oregon Coast in Rockaway, OR, right at the edge of the water, and enjoys easy access to everything this charming seaside town has to offer.\r\n\r\nThe main living area has an air of upscale luxuriousness with...",
+          "id": "597",
+          "name": "Palm Beach At Rockaway Beach",
+          "percent": 24,
+          "price": 541,
+          "previous_price": 711,
+          "rating_average_score": "4-5",
+          "rating_count": 90,
+          "sleeps": 10,
+          "url_image": "vacasa-units.imgix.net/772665.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=597&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        }
+      ],
+      "url": "https://www.vacasa.com/usa/oregon/rockaway-beach/?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+      "UTMs": {
+        "utm_campaign": "weekend_deal_2019-07-24",
+        "utm_campaignid": 1,
+        "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+        "utm_source": "sendgrid_peat",
+        "utm_medium": "email",
+        "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+      }
+    },
+    {
+      "name": "Boise",
+      "name_url": "Boise",
+      "state": "Idaho",
+      "state_abbreviated": " ID",
+      "dates_long_format": "July 26-27, 2019",
+      "dates_short_format": "7/26-27",
+      "unit_listing": [
+        {
+          "bath": 2,
+          "bed": 1,
+          "description": "Enveloped in opportunities for outdoor adventure and stress-melting relaxation, this Bogus Basin getaway has room for your whole group to dive into the fun. Offering easy access to the slopes from a ski-in/ski-out location, a shared hot tub, close-by trails, and a muscle-soothing shared sauna, you may never want to leave!\r\n\r\nWithin ski-in/ski-out distance of the fresh powdered-slopes at Bogus...",
+          "id": "12141",
+          "name": "Little Deer Point (270 I)",
+          "percent": 30,
+          "price": 136,
+          "previous_price": 194,
+          "rating_average_score": "4-5",
+          "rating_count": 15,
+          "sleeps": 8,
+          "url_image": "vacasa-units.imgix.net/678892.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=12141&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        },
+        {
+          "bath": 2,
+          "bed": 1,
+          "description": "Whether you're here for a weeklong mountain getaway or a weekend trip from Boise, you and your travel companions are sure to love spending your vacation days at this Horseshoe Bend condo. Perched right on the side of the mountain, Idaho Enchantment offers easy access to every outdoor activity, not to mention convenient on-site amenities such as shared laundry facilities, shared outdoor hot tubs,...",
+          "id": "12128",
+          "name": "Idaho Enchantment (244 F)",
+          "percent": 30,
+          "price": 136,
+          "previous_price": 194,
+          "rating_average_score": "4-5",
+          "rating_count": 13,
+          "sleeps": 8,
+          "url_image": "vacasa-units.imgix.net/1414961.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=12128&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        },
+        {
+          "bath": 2,
+          "bed": 1,
+          "description": "If a trip to the Boise area is in your near future, stay in this cozy one-bedroom condo that sleeps nine. While you're here, enjoy a shared hot tub, close proximity to the slopes, and spectacular views.\r\n\r\nThis rental is located on the first floor of Building C in Pioneer Condos at Bogus Basin. Year-round outdoor activities like skiing, snowboarding, hiking, mountain biking, and more are at your...",
+          "id": "12113",
+          "name": "Bogus Basin Getaway (218 C)",
+          "percent": 68,
+          "price": 61,
+          "previous_price": 190,
+          "rating_average_score": "5",
+          "rating_count": 22,
+          "sleeps": 9,
+          "url_image": "vacasa-units.imgix.net/1418535.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=12113&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        },
+        {
+          "bath": 2,
+          "bed": 1,
+          "description": "Fill your days with hiking, fresh powder for downhill runs, and stunning mountain beauty when you book your getaway to this Bogus Basin condo. Offering room for up to eight guests to enjoy the local adventure scene, the charming city of Boise, and the relaxation a shared hot tub, this is the perfect spot to come explore the great outdoors. \r\n\r\nSet about 20 miles from the heart of Boise, you'll be...",
+          "id": "12129",
+          "name": "Pioneer Vista (246 F)",
+          "percent": 30,
+          "price": 136,
+          "previous_price": 194,
+          "rating_average_score": "5",
+          "rating_count": 8,
+          "sleeps": 8,
+          "url_image": "vacasa-units.imgix.net/1414923.jpg",
+          "url_unit": "https://www.vacasa.com/unit.php?UnitID=12129&utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+          "UTMs": {
+            "utm_campaign": "weekend_deal_2019-07-24",
+            "utm_campaignid": 1,
+            "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+            "utm_source": "sendgrid_peat",
+            "utm_medium": "email",
+            "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+          }
+        }
+      ],
+      "url": "https://www.vacasa.com/usa/idaho/boise/?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email",
+      "UTMs": {
+        "utm_campaign": "weekend_deal_2019-07-24",
+        "utm_campaignid": 1,
+        "utm_uuid": "9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb",
+        "utm_source": "sendgrid_peat",
+        "utm_medium": "email",
+        "query_string": "?utm_campaign=weekend_deal_2019-07-24&utm_campaignid=1&utm_uuid=9f69ab52-ae2d-11e9-9fc2-8c8590d42dcb&utm_source=sendgrid_peat&utm_medium=email"
+      }
+    }
+  ],
+  "previous_reservation": {
+    "year": 2019,
+    "unit_id": 1,
+    "city": "Rockaway Beach",
+    "state": null,
+    "image": "vacasa-units.imgix.net/15451.jpg"
+  },
+  "previous_unit_image": "vacasa-units.imgix.net/15451.jpg",
+  "prev_res_city": "Rockaway Beach",
+  "prev_res_state": null,
+  "prev_res_year": "2019"
+}

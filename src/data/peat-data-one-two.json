@@ -226,10 +226,10 @@
     ],
     "previous_reservation": {
         "year": 2019,
-        "unit_id": 22480,
-        "city": "Boise",
-        "state": "Idaho",
-        "image": "vacasa-units.imgix.net/1413094.jpg"
+        "unit_id": 12281,
+        "city": null,
+        "state": null,
+        "image": null
     },
     "previous_unit_image": null,
     "prev_res_city": null,

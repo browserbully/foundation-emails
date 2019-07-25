@@ -30,7 +30,42 @@ table.button {
         border: 1px solid $lake;
         a {
           color: $lake !important;
-          font-weight: 400;
+          font-weight: 600 !important;
+          font-size: 16px !important;
+//           background-color: $white;
+//           &:hover {
+//              background-color: $midnight-10 !important; // Button hover background
+//           }
+        }
+      }
+    }
+  }
+  &.tertiary {
+    border: none !important;
+    &:hover {
+      table td {
+        background-color: $midnight-10 !important;
+        border: none;
+        a {
+          color: $lake !important;
+          // border: 1px solid $lake;
+          // border-radius: $global-radius;
+        }
+      }
+    }
+    table {
+      border-collapse: separate;
+      tr:first-child td:first-child { border-top-left-radius: $global-radius; }
+      tr:first-child td:last-child { border-top-right-radius: $global-radius; }
+      tr:last-child td:first-child { border-bottom-left-radius: $global-radius; }
+      tr:last-child td:last-child { border-bottom-right-radius: $global-radius; }
+      td {
+        background-color: $midnight-4;
+//         border-radius: $global-radius;
+        border: none;
+        a {
+          color: $lake !important;
+          font-weight: 600 !important;
           font-size: 16px !important;
 //           background-color: $white;
 //           &:hover {
@@ -41,6 +76,17 @@ table.button {
     }
   }
   &.tiny {
+    &:hover {
+      table td {
+        background-color: $midnight-10 !important;
+        border: none;
+        a {
+          color: $lake !important;
+          // border: 1px solid $lake;
+          // border-radius: $global-radius;
+        }
+      }
+    }
     table {
       border-collapse: separate;
       tr:first-child td:first-child { border-top-left-radius: 26px; }
@@ -48,12 +94,16 @@ table.button {
       tr:last-child td:first-child { border-bottom-left-radius: 26px; }
       tr:last-child td:last-child { border-bottom-right-radius: 26px; }
       td {
+        background-color: $midnight-4;
+        border: none;
         padding: 0;
         a {
-          font-weight: 700;
+          color: $lake !important;
+          font-weight: 600 !important;
           line-height: 16px;
           text-transform: uppercase;
           padding: 4px 20px 4px 20px;
+          font-size: 12px !important;
         }
       }
     }

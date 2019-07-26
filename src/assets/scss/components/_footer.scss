@@ -30,7 +30,7 @@
     &.links {
       text-align: right !important;
       a {
-        color: $midnight-60;
+        color: $light-gray !important;
         font-size: 10px !important;
         font-weight: 600;
         line-height: 16px;
@@ -40,7 +40,7 @@
       color: $light-gray;
     }
   }
-  .copyright {
+  .copyright a  {
     color: $light-gray;
     font-size: 10px !important;
     font-weight: 600;

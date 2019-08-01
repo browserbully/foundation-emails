@@ -61,18 +61,14 @@ subject: Your vacation is our full-time job
 
     \{{#each unit_one_two}}
     <columns large="6">
-      <button target="_blank" href="\{{url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{percent}}&#37;</button>
+      <a href="\{{url_unit}}&utm_content=unit-card_name"><h3>\{{name}}</h3></a>
       <a target="_blank" href="\{{url_unit}}&utm_content=unit-card_image">
         <img class="unit" src="https://\{{url_image}}?q=45&w=591&h=394&fit=crop"  alt="\{{name}}">
       </a>
-      <a href="\{{url_unit}}&utm_content=unit-card_filters">
-        <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
-      </a>
-      <div class="rating"><a target="_blank" href="\{{url_unit}}&utm_content=unit-card_reviews">\{{#if rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score}}.png" alt="\{{rating_average_score}} Stars">\{{/if}}\{{#if rating_count}}<span class="reviews">\{{rating_count}} Reviews</span>\{{/if}}</a>
+      <span class="attributes">\{{bed}} Bed | \{{bath}} Bath | Sleeps \{{sleeps}}</span>
+      <div class="rating">\{{#if rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{rating_average_score}}.png" alt="\{{rating_average_score}} Stars">\{{/if}}\{{#if rating_count}}<span class="reviews">\{{rating_count}} Reviews</span>\{{/if}}
       </div>
-      <a target="_blank" href="\{{url_unit}}&utm_content=unit-card_price">
-        <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
-      </a>
+      <p><span class="current-price">$\{{price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
     </columns>
     \{{/each}} \{{!-- unit_one_two --}}
 
@@ -83,33 +79,25 @@ subject: Your vacation is our full-time job
   <row class="listing">
 
     <columns large="6">
-      <button target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{unit_three.percent}}&#37;</button>
+      <a href="\{{url_unit}}&utm_content=unit-card_name"><h3>\{{name}}</h3></a>
       <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_image">
         <img class="unit" src="https://\{{unit_three.url_image}}?q=45&w=591&h=394&fit=crop"  alt="\{{unit_three.name}}">
       </a>
-      <a href="\{{unit_three.url_unit}}&utm_content=unit-card_filters">
-        <span class="attributes">\{{unit_three.bed}} Bed | \{{unit_three.bath}} Bath | Sleeps \{{unit_three.sleeps}}</span>
-      </a>
-      <div class="rating"><a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_reviews">\{{#if unit_three.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_three.rating_average_score}}.png" alt="\{{unit_three.rating_average_score}} Stars">\{{/if}}\{{#if unit_three.rating_count}}<span class="reviews">\{{unit_three.rating_count}} Reviews</span>\{{/if}}</a>
+      <span class="attributes">\{{unit_three.bed}} Bed | \{{unit_three.bath}} Bath | Sleeps \{{unit_three.sleeps}}</span>
+      <div class="rating">\{{#if unit_three.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_three.rating_average_score}}.png" alt="\{{unit_three.rating_average_score}} Stars">\{{/if}}\{{#if unit_three.rating_count}}<span class="reviews">\{{unit_three.rating_count}} Reviews</span>\{{/if}}
       </div>
-      <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_price">
-        <p><span class="current-price">$\{{unit_three.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_three.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
-      </a>
+      <p><span class="current-price">$\{{unit_three.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_three.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
     </columns>
 
     <columns large="6">
-      <button target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{unit_four.percent}}&#37;</button>
+      <a href="\{{url_unit}}&utm_content=unit-card_name"><h3>\{{name}}</h3></a>
       <a target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_image">
         <img class="unit" src="https://\{{unit_four.url_image}}?q=45&w=591&h=394&fit=crop"  alt="\{{unit_four.name}}">
       </a>
-      <a href="\{{unit_four.url_unit}}&utm_content=unit-card_filters">
-        <span class="attributes">\{{unit_four.bed}} Bed | \{{unit_four.bath}} Bath | Sleeps \{{unit_four.sleeps}}</span>
-      </a>
-      <div class="rating"><a target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_reviews">\{{#if unit_four.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_four.rating_average_score}}.png" alt="\{{unit_four.rating_average_score}} Stars">\{{/if}}\{{#if unit_four.rating_count}}<span class="reviews">\{{unit_four.rating_count}} Reviews</span>\{{/if}}</a>
+      <span class="attributes">\{{unit_four.bed}} Bed | \{{unit_four.bath}} Bath | Sleeps \{{unit_four.sleeps}}</span>
+      <div class="rating">\{{#if unit_four.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_four.rating_average_score}}.png" alt="\{{unit_four.rating_average_score}} Stars">\{{/if}}\{{#if unit_four.rating_count}}<span class="reviews">\{{unit_four.rating_count}} Reviews</span>\{{/if}}
       </div>
-      <a target="_blank" href="\{{unit_four.url_unit}}&utm_content=unit-card_price">
         <p><span class="current-price">$\{{unit_four.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_four.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
-      </a>
     </columns>
 
   </row>
@@ -117,18 +105,14 @@ subject: Your vacation is our full-time job
   <row class="listing">
 
     <columns>
-      <button target="_blank" href="\{{url_unit}}&utm_content=unit-card_percentage" class="tiny rounded tertiary">Save \{{unit_three.percent}}&#37;</button>
+      <a href="\{{url_unit}}&utm_content=unit-card_name"><h3>\{{name}}</h3></a>
       <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_image">
         <img class="unit" src="https://\{{unit_three.url_image}}?q=45&w=591&h=394&fit=crop"  alt="\{{unit_three.url_image}}">
       </a>
-      <a href="\{{unit_three.url_unit}}&utm_content=unit-card_filters">
-        <span class="attributes">\{{unit_three.bed}} Bed | \{{unit_three.bath}} Bath | Sleeps \{{unit_three.sleeps}}</span>
-      </a>
-      <div class="rating"><a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_reviews">\{{#if unit_three.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_three.rating_average_score}}.png" alt="\{{unit_three.rating_average_score}} Stars">\{{/if}}\{{#if unit_three.rating_count}}<span class="reviews">\{{unit_three.rating_count}} Reviews</span>\{{/if}}</a>
+      <span class="attributes">\{{unit_three.bed}} Bed | \{{unit_three.bath}} Bath | Sleeps \{{unit_three.sleeps}}</span>
+      <div class="rating">\{{#if unit_three.rating_average_score}}<img class="stars" width="101" height="16" src="https://static-assets.boise.vacasa.com/peat/stars_\{{unit_three.rating_average_score}}.png" alt="\{{unit_three.rating_average_score}} Stars">\{{/if}}\{{#if unit_three.rating_count}}<span class="reviews">\{{unit_three.rating_count}} Reviews</span>\{{/if}}
       </div>
-      <a target="_blank" href="\{{unit_three.url_unit}}&utm_content=unit-card_price">
-        <p><span class="current-price">$\{{unit_three.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_three.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
-      </a>
+      <p><span class="current-price">$\{{unit_three.price}}</span>&nbsp;&nbsp;<span class="previous-price">$\{{unit_three.previous_price}}</span>&nbsp;<span class="per-night">avg/night</span></p>
     </columns>
   </row>
   \{{/if}} \{{!-- unit_four --}}

@@ -7,6 +7,12 @@ h3, h3 a {
   color: $black !important;
   margin-bottom: 8px !important;
 }
+h3.unit-name {
+  width: 275px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
 .listing {
   .columns {
     margin-bottom: 40px;
@@ -74,6 +80,7 @@ h3, h3 a {
   }
   .current-price {
     font-weight: 600;
+    font-size: 15px;
   }
   .previous-price {
     text-decoration: line-through;
@@ -93,5 +100,14 @@ h3, h3 a {
   table.body img.stars {
       width: 101px !important;
       height: 16px !important;
+  }
+  h3.unit-name {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  h3.unit-name {
+    width: 275px !important;
   }
 }

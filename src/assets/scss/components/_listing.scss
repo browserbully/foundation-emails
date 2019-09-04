@@ -72,8 +72,10 @@ h3.unit-name {
     font-family: $nunito;
     font-size: 12px;
     font-weight: 600;
-    vertical-align: bottom;
-    display: inline-block !important;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0px !important;
   }
   p {
     margin-top: 8px;

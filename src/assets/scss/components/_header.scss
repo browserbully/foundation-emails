@@ -1,6 +1,9 @@
 h1 span {
   color: $white !important;
 }
+span.headline-container {
+  text-align: center !important;
+}
 .header {
   background-color: $white;
   &.dark {
@@ -18,8 +21,19 @@ h1 span {
       font-size: 28px;
       font-weight: bold;
     }
+    &.header-thin {
+      .wrapper-inner {
+        padding: 16px 0px 16px 0px;
+      }
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
     .wrapper-inner {
-      padding-bottom: 0 !important;
+      padding-bottom: 0px;
+    }
+    span.header-text {
+      color:$white;
+      white-space: nowrap;
     }
     p.lead {
       color: $white !important;
@@ -37,6 +51,11 @@ h1 span {
 
 // Responsive image override
 @media only screen and (max-width: 710px) {
+  table.body img {
+    width: 123px !important;
+    height: 24px !important;
+    margin-bottom: 16px;
+  }
   table.body img.past-unit {
       width: 95px !important;
       height: 64px !important;

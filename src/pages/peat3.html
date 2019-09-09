@@ -2,26 +2,32 @@
 subject: Your vacation is our full-time job
 ---
 
-<wrapper class="header dark header-img">
+<wrapper class="header dark header-thin">
   <container>
-    <spacer size="26"></spacer>
     <row>
       <columns large="12" small="8">
         <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_logo" >
-          <img width="246" height="48" src="https://static-assets.boise.vacasa.com/peat/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
+          <img width="123" height="24" src="https://static-assets.boise.vacasa.com/peat/Logos_Lockup_Horizontal_Color.png" alt="Vacasa">
         </a>
       </columns>
-    </row>
-    <spacer size="42"></spacer>
-    <row>
       <columns>
-        <span><h1 class="headline">Your vacation is our full-time job</h1></span>
-        <p class="lead"><span>Booking at the last minute</span> can save you a bundle. Check out some of our best deals near you this weekend.</p>
-        <button target="_blank" href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_cta" class="primary">Search Vacation Rentals</button>
+        <span class="header-text">
+          Your vacation is our full-time job
+        </span>
       </columns>
     </row>
-    <spacer size="72"></spacer>
-    <row>
+  </container>
+</wrapper>
+
+<container>
+  <row>
+    <columns>
+      <span class="headline-container"><h1 class="headline">Seize the Weekend.</h1></span>
+      <p class="lead">Grab your moment, The {{Location}} is calling.</p>
+    </columns>
+  </row>
+  <spacer size="72"></spacer>
+  <row>
       <columns>
         <center>
           <a href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_illustration" >
@@ -30,10 +36,12 @@ subject: Your vacation is our full-time job
         </center>
       </columns>
     </row>
-  </container>
-</wrapper>
-
-<container>
+    <row> 
+      <columns>
+        <button target="_blank" href="https://vacasa.com?&utm_campaign=weekend_deal&utm_campaignid=1&utm_uuid=02597588-9a85-11e9-88e1-88e9fe5c0ce7&utm_source=sendgrid_peat&utm_medium=email&utm_content=header_cta" class="primary">Find Your Vacation Rental</button>
+      </columns>
+    </row>
+</container>
 
   {{#if peat-data.city}}
   {{#each peat-data.city}}
